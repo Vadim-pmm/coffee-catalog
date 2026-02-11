@@ -1,639 +1,688 @@
 <!doctype html>
 <html lang="ru">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Каталог запасных частей</title>
-  <style>
-    :root {
-      --bg: #f6f1ec;
-      --card: #ffffff;
-      --ink: #1d1b1a;
-      --accent: #9c5c2b;
-    }
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Caffe Italia — Запчасти</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <main class="page">
+      <div class="shell">
+        <section class="hero">
+          <h1 class="hero-title">Запчасти для кофемашин</h1>
+          <p class="hero-text">
+            Подбор запчастей по артикулам и моделям. В каталоге собраны детали, которые чаще всего нужны для обслуживания и ремонта.
+          </p>
+          <div class="actions">
+            <a class="btn btn-primary" href="#home" data-view="home">На главную</a>
+            <a class="btn btn-ghost" href="#order" data-view="order">Заказ</a>
+            <a class="btn btn-ghost" href="#catalog" data-view="catalog">Каталог деталей</a>
+          </div>
+        </section>
 
-    * { box-sizing: border-box; }
+        <section class="section view" id="order"></section>
 
-    body {
-      margin: 0;
-      font-family: "Georgia", "Times New Roman", serif;
-      color: var(--ink);
-      background: radial-gradient(circle at top, #fff7ef 0%, var(--bg) 55%, #efe6dd 100%);
-    }
-
-    .header {
-      text-align: center;
-      padding: 36px 16px 8px;
-    }
-
-    .header h1 {
-      margin: 0 0 8px;
-      font-size: 36px;
-      letter-spacing: 0.3px;
-    }
-
-    .header p {
-      margin: 0;
-      font-size: 22px;
-      color: #4b3f39;
-    }
-
-    .catalog {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 16px 18px 56px;
-      display: grid;
-      gap: 28px;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      justify-items: center;
-    }
-
-    .card {
-      width: 100%;
-      max-width: 520px;
-      background: var(--card);
-      border-radius: 18px;
-      padding: 22px;
-      text-align: center;
-      box-shadow: 0 18px 40px rgba(32, 23, 16, 0.12);
-    }
-
-    .card img {
-      display: block;
-      margin: 0 auto 16px;
-      width: 100%;
-      max-width: 420px;
-      max-height: 320px;
-      object-fit: contain;
-    }
-
-    .meta {
-      font-size: 22px;
-      line-height: 1.35;
-    }
-
-    .row {
-      margin: 6px 0;
-    }
-
-    .label {
-      font-weight: 700;
-      color: var(--accent);
-    }
-
-    @media (max-width: 540px) {
-      .header h1 { font-size: 30px; }
-      .header p { font-size: 20px; }
-      .meta { font-size: 20px; }
-    }
-  </style>
-</head>
-<body>
-  <header class="header">
-    <h1>Каталог запасных частей</h1>
-  </header>
-
-  <main class="catalog">
-    <article class="card">
-      <img src="images/image4.jpeg" alt="Фото детали">
-      <div class="meta">
-        <div class="row"><span class="label">Артикул:</span> 8.G.2.0018</div>
-        <div class="row"><span class="label">Наименование по накладной:</span> Капучинатор</div>
-        <div class="row"><span class="label">Внутренее наименование</span> Капучинатор двойной (без жиклеров и колпачка)</div>
+        <section class="section view" id="catalog">
+          <h2 class="section-title">Каталог деталей</h2>
+          <p class="section-meta">Всего позиций: 60</p>
+          <div class="cards">
+            <article class="card">
+              <div class="card-media">
+                <img src="images/8.G.2.0018.jpeg" alt="Капучинатор двойной (без жиклеров и колпачка)">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Капучинатор двойной (без жиклеров и колпачка)</h3>
+                <p class="card-article">Артикул: <span>8.G.2.0018</span></p>
+                <p class="card-models">Модели: <span>F2-H, F2-Plus</span></p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-media">
+                <img src="images/8G20018_F2__1.jpeg" alt="(Dr.Coffee)_8G20018_F2_К1 Капучинатор с колпачком пенообразователя">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">(Dr.Coffee)_8G20018_F2_К1 Капучинатор с колпачком пенообразователя</h3>
+                <p class="card-article">Артикул: <span>8G20018_F2_К1</span></p>
+                <p class="card-models">Модели: <span>не указано</span></p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-media">
+                <img src="images/8.W.4.0041.jpeg" alt="Дюза капучинатора">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Дюза капучинатора</h3>
+                <p class="card-article">Артикул: <span>8.W.4.0041</span></p>
+                <p class="card-models">Модели: <span>F2-H, F2-Plus</span></p>
+                <p class="card-note">Примечание: <span>мин партия 10 шт</span></p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-media">
+                <img src="images/8.G.1.0004.jpeg" alt="Кольцо поршня заварного блока 37.69 x 3.53">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Кольцо поршня заварного блока 37.69 x 3.53</h3>
+                <p class="card-article">Артикул: <span>8.G.1.0004</span></p>
+                <p class="card-models">Модели: <span>F2-H, F2-Plus</span></p>
+                <p class="card-note">Примечание: <span>Поставляется только в комплектах ТО1 и ТО2</span></p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-media">
+                <img src="images/8.G.1.0005.jpeg" alt="Кольцо уплотнительное 8.5x 1.8 крем-клапана">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Кольцо уплотнительное 8.5x 1.8 крем-клапана</h3>
+                <p class="card-article">Артикул: <span>8.G.1.0005</span></p>
+                <p class="card-models">Модели: <span>F2-H, F2-Plus</span></p>
+                <p class="card-note">Примечание: <span>Поставляется только в комплектах ТО1 и ТО2</span></p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-media">
+                <img src="images/8.G.1.0008.jpeg" alt="Кольцо уплотнительное 3.3x2.0 T-переходника трубки помпы">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Кольцо уплотнительное 3.3x2.0 T-переходника трубки помпы</h3>
+                <p class="card-article">Артикул: <span>8.G.1.0008</span></p>
+                <p class="card-models">Модели: <span>F2-H, F2-Plus</span></p>
+                <p class="card-note">Примечание: <span>мин партия 10 шт</span></p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-media">
+                <img src="images/8.W.5.0023.jpeg" alt="Фиксирующая  скоба трубок">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Фиксирующая  скоба трубок</h3>
+                <p class="card-article">Артикул: <span>8.W.5.0023</span></p>
+                <p class="card-models">Модели: <span>F2-H, F2-Plus</span></p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-media">
+                <img src="images/8.D.3.0037.jpeg" alt="Трансформатор кофемашины 220/20V 1.5A">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Трансформатор кофемашины 220/20V 1.5A</h3>
+                <p class="card-article">Артикул: <span>8.D.3.0037</span></p>
+                <p class="card-models">Модели: <span>F2-H, F2-Plus</span></p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-media">
+                <img src="images/8.S.1.0161.jpeg" alt="Направляющая нижнего поршня">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Направляющая нижнего поршня</h3>
+                <p class="card-article">Артикул: <span>8.S.1.0161</span></p>
+                <p class="card-models">Модели: <span>F2-H, F2-Plus, F3, F30</span></p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-media">
+                <img src="images/8.S.1.0163.jpeg" alt="Пластиковый стакан поршня заварного блока">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Пластиковый стакан поршня заварного блока</h3>
+                <p class="card-article">Артикул: <span>8.S.1.0163</span></p>
+                <p class="card-models">Модели: <span>F2-H, F2-Plus, F3, F30</span></p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-media">
+                <img src="images/8.G.2.0048.jpeg" alt="Капучинатор одинарный (без жиклера)">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Капучинатор одинарный (без жиклера)</h3>
+                <p class="card-article">Артикул: <span>8.G.2.0048</span></p>
+                <p class="card-models">Модели: <span>F2-H, F2-Plus</span></p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-media">
+                <img src="images/8.D.3.0021.jpeg" alt="Клапан горячей воды 2-х ходовой">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Клапан горячей воды 2-х ходовой</h3>
+                <p class="card-article">Артикул: <span>8.D.3.0021</span></p>
+                <p class="card-models">Модели: <span>F2-H, F2-Plus</span></p>
+                <p class="card-note">Примечание: <span>Поставляется только в комплектах ТО1 и ТО2</span></p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-media">
+                <img src="images/8.S.1.0164.jpeg" alt="Лапка сброса отработанного кофе">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Лапка сброса отработанного кофе</h3>
+                <p class="card-article">Артикул: <span>8.S.1.0164</span></p>
+                <p class="card-models">Модели: <span>F2-H, F2-Plus</span></p>
+                <p class="card-note">Примечание: <span>Поставляется только в комплектах ТО1 и ТО2</span></p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-media">
+                <img src="images/8.S.1.0189.jpeg" alt="Форсунка капучинатора">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Форсунка капучинатора</h3>
+                <p class="card-article">Артикул: <span>8.S.1.0189</span></p>
+                <p class="card-models">Модели: <span>F2-H, F2-Plus</span></p>
+                <p class="card-note">Примечание: <span>Поставляется только в комплектах ТО1 и ТО2</span></p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-media">
+                <img src="images/7.NN.0494.jpeg" alt="Адаптер для бака воды ( в сборе)">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Адаптер для бака воды ( в сборе)</h3>
+                <p class="card-article">Артикул: <span>7.NN.0494</span></p>
+                <p class="card-models">Модели: <span>F2-H, F2-Plus</span></p>
+                <p class="card-note">Примечание: <span>Поставляется только в комплектах ТО1 и ТО2</span></p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-media">
+                <img src="images/8.S.1.0096.jpeg" alt="Шестерня мотор-редуктора заварочного узла">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Шестерня мотор-редуктора заварочного узла</h3>
+                <p class="card-article">Артикул: <span>8.S.1.0096</span></p>
+                <p class="card-models">Модели: <span>F2-H, F2-Plus</span></p>
+                <p class="card-note">Примечание: <span>Поставляется только в комплектах ТО1 и ТО2</span></p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-media">
+                <img src="images/8.G.3.0011_F2.jpeg" alt="Тефлоновая трубка 600 мм">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Тефлоновая трубка 600 мм</h3>
+                <p class="card-article">Артикул: <span>8.G.3.0011_F2</span></p>
+                <p class="card-models">Модели: <span>F2-H, F2-Plus</span></p>
+                <p class="card-note">Примечание: <span>Поставляется только в комплектах ТО1 и ТО2</span></p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-media">
+                <img src="images/8.S.1.0171.jpeg" alt="Втулка-трубка верхнего поршня">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Втулка-трубка верхнего поршня</h3>
+                <p class="card-article">Артикул: <span>8.S.1.0171</span></p>
+                <p class="card-models">Модели: <span>F2-H, F2-Plus</span></p>
+                <p class="card-note">Примечание: <span>Поставляется только в комплектах ТО1 и ТО2</span></p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-media">
+                <img src="images/7.NN.0022.jpeg" alt="Нижняя часть дисперсера с двойным капучинатором в сборе">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Нижняя часть дисперсера с двойным капучинатором в сборе</h3>
+                <p class="card-article">Артикул: <span>7.NN.0022</span></p>
+                <p class="card-models">Модели: <span>F2-H, F2-Plus</span></p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-media">
+                <img src="images/7.NN.0012.jpeg" alt="Мембрана помпы">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Мембрана помпы</h3>
+                <p class="card-article">Артикул: <span>7.NN.0012</span></p>
+                <p class="card-models">Модели: <span>F2-H, F2-Plus</span></p>
+                <p class="card-note">Примечание: <span>Поставляется только в комплектах ТО1 и ТО2</span></p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-media">
+                <img src="images/8.D.1.0102.jpeg" alt="Плата HMI">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Плата HMI</h3>
+                <p class="card-article">Артикул: <span>8.D.1.0102</span></p>
+                <p class="card-models">Модели: <span>F2-H, F2-Plus</span></p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-media">
+                <img src="images/8.G.1.0026.jpeg" alt="Уплотнитель стакана миксера 37.77x2.62">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Уплотнитель стакана миксера 37.77x2.62</h3>
+                <p class="card-article">Артикул: <span>8.G.1.0026</span></p>
+                <p class="card-models">Модели: <span>F2-Plus</span></p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-media">
+                <img src="images/8.G.2.0030.jpeg" alt="Уплотнение V-ring мотора миксера">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Уплотнение V-ring мотора миксера</h3>
+                <p class="card-article">Артикул: <span>8.G.2.0030</span></p>
+                <p class="card-models">Модели: <span>F2-Plus</span></p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-media">
+                <img src="images/8.G.1.0011.jpeg" alt="Уплотнение 5x2 от помпы к Т-обр. переходнику">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Уплотнение 5x2 от помпы к Т-обр. переходнику</h3>
+                <p class="card-article">Артикул: <span>8.G.1.0011</span></p>
+                <p class="card-models">Модели: <span>F2-H, F2-Plus</span></p>
+                <p class="card-note">Примечание: <span>Поставляется только в комплектах ТО1 и ТО2</span></p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-media">
+                <img src="images/8.W.5.0011.jpeg" alt="Пружина лапки сбрасывателя ЦУ">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Пружина лапки сбрасывателя ЦУ</h3>
+                <p class="card-article">Артикул: <span>8.W.5.0011</span></p>
+                <p class="card-models">Модели: <span>F2-H, F2-Plus</span></p>
+                <p class="card-note">Примечание: <span>Поставляется только в комплектах ТО1 и ТО2</span></p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-media">
+                <img src="images/8.G.1.0013.jpeg" alt="Уплотнение O-Ring 5.6x1.8 выхода трубки-втулки верхн.поршня">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Уплотнение O-Ring 5.6x1.8 выхода трубки-втулки верхн.поршня</h3>
+                <p class="card-article">Артикул: <span>8.G.1.0013</span></p>
+                <p class="card-models">Модели: <span>F2-H, F2-Plus</span></p>
+                <p class="card-note">Примечание: <span>Поставляется только в комплектах ТО1 и ТО2</span></p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-media">
+                <img src="images/8.D.1.0026.jpeg" alt="Силовая плата кофемашины F2">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Силовая плата кофемашины F2</h3>
+                <p class="card-article">Артикул: <span>8.D.1.0026</span></p>
+                <p class="card-models">Модели: <span>F2-H, F2-Plus</span></p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-media">
+                <img src="images/8.G.1.0014.jpeg" alt="Уплотн. кольцо носиков раздатчика O-ring 5x2.5">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Уплотн. кольцо носиков раздатчика O-ring 5x2.5</h3>
+                <p class="card-article">Артикул: <span>8.G.1.0014</span></p>
+                <p class="card-models">Модели: <span>F2-H, F2-Plus</span></p>
+                <p class="card-note">Примечание: <span>Поставляется только в комплектах ТО1 и ТО2</span></p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-media">
+                <img src="images/8.S.1.0319.jpeg" alt="Тройник Т-образный подачи молока">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Тройник Т-образный подачи молока</h3>
+                <p class="card-article">Артикул: <span>8.S.1.0319</span></p>
+                <p class="card-models">Модели: <span>F2-H, F2-Plus</span></p>
+                <p class="card-note">Примечание: <span>Поставляется только в комплектах ТО1 и ТО2</span></p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-media">
+                <img src="images/8.S.1.0342.jpeg" alt="Коннектор прямой 3x6 выход воздушного клапана">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Коннектор прямой 3x6 выход воздушного клапана</h3>
+                <p class="card-article">Артикул: <span>8.S.1.0342</span></p>
+                <p class="card-models">Модели: <span>F2-H, F2-Plus</span></p>
+                <p class="card-note">Примечание: <span>Поставляется только в комплектах ТО1 и ТО2</span></p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-media">
+                <img src="images/8.S.1.0347.jpeg" alt="Воздухозаборник F2-Х5 (без фильтра) прозрачн.">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Воздухозаборник F2-Х5 (без фильтра) прозрачн.</h3>
+                <p class="card-article">Артикул: <span>8.S.1.0347</span></p>
+                <p class="card-models">Модели: <span>F2-H, F2-Plus</span></p>
+                <p class="card-note">Примечание: <span>Поставляется только в комплектах ТО1 и ТО2</span></p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-media">
+                <img src="images/8.S.1.0350.jpeg" alt="Соединитель прямой под силикон трубку">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Соединитель прямой под силикон трубку</h3>
+                <p class="card-article">Артикул: <span>8.S.1.0350</span></p>
+                <p class="card-models">Модели: <span>F2-H, F2-Plus</span></p>
+                <p class="card-note">Примечание: <span>Поставляется только в комплектах ТО1 и ТО2</span></p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-media">
+                <img src="images/7.NN.0019.jpeg" alt="Предохранительный клапан 5 bar">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Предохранительный клапан 5 bar</h3>
+                <p class="card-article">Артикул: <span>7.NN.0019</span></p>
+                <p class="card-models">Модели: <span>F2-H, F2-Plus</span></p>
+                <p class="card-note">Примечание: <span>Поставляется только в комплектах ТО1 и ТО2</span></p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-media">
+                <img src="images/placeholder.svg" alt="Дисплей в сборе">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Дисплей в сборе</h3>
+                <p class="card-article">Артикул: <span>7.NN.0044</span></p>
+                <p class="card-models">Модели: <span>F2-H, F2-Plus</span></p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-media">
+                <img src="images/7.NN.0069.jpeg" alt="Предохранительный клапан 15 bar">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Предохранительный клапан 15 bar</h3>
+                <p class="card-article">Артикул: <span>7.NN.0069</span></p>
+                <p class="card-models">Модели: <span>F2-H, F2-Plus</span></p>
+                <p class="card-note">Примечание: <span>Поставляется только в комплектах ТО1 и ТО2</span></p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-media">
+                <img src="images/7.NN.0185.jpeg" alt="Паровой бойлер">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Паровой бойлер</h3>
+                <p class="card-article">Артикул: <span>7.NN.0185</span></p>
+                <p class="card-models">Модели: <span>F2-H, F2-Plus</span></p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-media">
+                <img src="images/7.NN.0186.jpeg" alt="Бойлер кипятка">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Бойлер кипятка</h3>
+                <p class="card-article">Артикул: <span>7.NN.0186</span></p>
+                <p class="card-models">Модели: <span>F2-H, F2-Plus</span></p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-media">
+                <img src="images/7.NN.0371.jpeg" alt="Запорный Клапан бункера воды">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Запорный Клапан бункера воды</h3>
+                <p class="card-article">Артикул: <span>7.NN.0371</span></p>
+                <p class="card-models">Модели: <span>F2-H, F2-Plus</span></p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-media">
+                <img src="images/8.D.3.0060.jpeg" alt="Мотор-редуктор шнека бункера сыпучих продуктов">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Мотор-редуктор шнека бункера сыпучих продуктов</h3>
+                <p class="card-article">Артикул: <span>8.D.3.0060</span></p>
+                <p class="card-models">Модели: <span>F2-Plus</span></p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-media">
+                <img src="images/7.NN.0119.jpeg" alt="Жернов верхний в сборе">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Жернов верхний в сборе</h3>
+                <p class="card-article">Артикул: <span>7.NN.0119</span></p>
+                <p class="card-models">Модели: <span>F2-H, F2-Plus</span></p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-media">
+                <img src="images/8.S.1.0521.jpeg" alt="Коннектор 5 выходов F3">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Коннектор 5 выходов F3</h3>
+                <p class="card-article">Артикул: <span>8.S.1.0521</span></p>
+                <p class="card-models">Модели: <span>F3</span></p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-media">
+                <img src="images/8.W.5.0054.jpeg" alt="Пружина силиконового шланга выхода молока в раздатчике">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Пружина силиконового шланга выхода молока в раздатчике</h3>
+                <p class="card-article">Артикул: <span>8.W.5.0054</span></p>
+                <p class="card-models">Модели: <span>F2-H, F2-Plus</span></p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-media">
+                <img src="images/8.S.1.0185.jpeg" alt="Переходник трубок в диспенсер кофемашины">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Переходник трубок в диспенсер кофемашины</h3>
+                <p class="card-article">Артикул: <span>8.S.1.0185</span></p>
+                <p class="card-models">Модели: <span>F2-H, F2-Plus</span></p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-media">
+                <img src="images/8.S.1.0181.jpeg" alt="Адаптер выхода кофе в диспенсере">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Адаптер выхода кофе в диспенсере</h3>
+                <p class="card-article">Артикул: <span>8.S.1.0181</span></p>
+                <p class="card-models">Модели: <span>F2-H, F2-Plus</span></p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-media">
+                <img src="images/8.W.6.0055.jpeg" alt="Сетка прошня заварочного блока верхнего (нижнего)">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Сетка прошня заварочного блока верхнего (нижнего)</h3>
+                <p class="card-article">Артикул: <span>8.W.6.0055</span></p>
+                <p class="card-models">Модели: <span>F2-H, F2-Plus</span></p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-media">
+                <img src="images/8.S.1.0170.jpeg" alt="Воронка выхода  молотого кофе заварного блока">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Воронка выхода  молотого кофе заварного блока</h3>
+                <p class="card-article">Артикул: <span>8.S.1.0170</span></p>
+                <p class="card-models">Модели: <span>F2-H, F2-Plus</span></p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-media">
+                <img src="images/8.W.5.0012.jpeg" alt="Пружинка воронки выхода молотого кофе">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Пружинка воронки выхода молотого кофе</h3>
+                <p class="card-article">Артикул: <span>8.W.5.0012</span></p>
+                <p class="card-models">Модели: <span>F2-H, F2-Plus</span></p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-media">
+                <img src="images/8.S.1.0162.jpeg" alt="Нижний поршень заварного устройства">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Нижний поршень заварного устройства</h3>
+                <p class="card-article">Артикул: <span>8.S.1.0162</span></p>
+                <p class="card-models">Модели: <span>F2-H, F2-Plus</span></p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-media">
+                <img src="images/8.S.1.0167.jpeg" alt="Верхний поршень заварного устройства">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Верхний поршень заварного устройства</h3>
+                <p class="card-article">Артикул: <span>8.S.1.0167</span></p>
+                <p class="card-models">Модели: <span>F2-H, F2-Plus</span></p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-media">
+                <img src="images/8.S.1.0165.jpeg" alt="Направляющая стакана заварного устройства">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Направляющая стакана заварного устройства</h3>
+                <p class="card-article">Артикул: <span>8.S.1.0165</span></p>
+                <p class="card-models">Модели: <span>F2-H, F2-Plus, F3</span></p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-media">
+                <img src="images/8.W.1.0006.png" alt="Гильза стакана заварочного устройства, металл">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Гильза стакана заварочного устройства, металл</h3>
+                <p class="card-article">Артикул: <span>8.W.1.0006</span></p>
+                <p class="card-models">Модели: <span>F2-H, F2-Plus, F3</span></p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-media">
+                <img src="images/8.G.1.0012.jpeg" alt="Уплотнение O-Ring 4.0x1.8 штуцера подачи воды в заварной блок">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Уплотнение O-Ring 4.0x1.8 штуцера подачи воды в заварной блок</h3>
+                <p class="card-article">Артикул: <span>8.G.1.0012</span></p>
+                <p class="card-models">Модели: <span>F2-H, F2-Plus, F3</span></p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-media">
+                <img src="images/8.S.1.0557.jpeg" alt="Фиксатор клапана бункера воды">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Фиксатор клапана бункера воды</h3>
+                <p class="card-article">Артикул: <span>8.S.1.0557</span></p>
+                <p class="card-models">Модели: <span>F2-H, F2-Plus, F3</span></p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-media">
+                <img src="images/8.S.1.0195.jpeg" alt="Корпус адаптера бака воды (не в сборе)">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Корпус адаптера бака воды (не в сборе)</h3>
+                <p class="card-article">Артикул: <span>8.S.1.0195</span></p>
+                <p class="card-models">Модели: <span>F2-H, F2-Plus</span></p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-media">
+                <img src="images/8.G.1.0039.jpeg" alt="Уплотнительное кольцо штуцера бойлера 9.5x1.5">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Уплотнительное кольцо штуцера бойлера 9.5x1.5</h3>
+                <p class="card-article">Артикул: <span>8.G.1.0039</span></p>
+                <p class="card-models">Модели: <span>F2-H, F2-Plus</span></p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-media">
+                <img src="images/8.W.4.0040.jpeg" alt="Штуцер бойлера пара/воды под скобу (металл)">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Штуцер бойлера пара/воды под скобу (металл)</h3>
+                <p class="card-article">Артикул: <span>8.W.4.0040</span></p>
+                <p class="card-models">Модели: <span>F2-H, F2-Plus</span></p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-media">
+                <img src="images/8.D.3.0083.jpeg" alt="Термопредохранитель 155 град С">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Термопредохранитель 155 град С</h3>
+                <p class="card-article">Артикул: <span>8.D.3.0083</span></p>
+                <p class="card-models">Модели: <span>F2-H, F2-Plus</span></p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-media">
+                <img src="images/8.D.3.0100.jpeg" alt="Щуп уровня воды бойлера пара">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Щуп уровня воды бойлера пара</h3>
+                <p class="card-article">Артикул: <span>8.D.3.0100</span></p>
+                <p class="card-models">Модели: <span>F2-H, F2-Plus</span></p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-media">
+                <img src="images/8.D.3.0035.jpeg" alt="Блок клапанов пара (комплект)">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Блок клапанов пара (комплект)</h3>
+                <p class="card-article">Артикул: <span>8.D.3.0035</span></p>
+                <p class="card-models">Модели: <span>F2-H, F2-Plus</span></p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-media">
+                <img src="images/8.T.1.0003.jpeg" alt="Жернов нижний кофемолки , керамика">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Жернов нижний кофемолки , керамика</h3>
+                <p class="card-article">Артикул: <span>8.T.1.0003</span></p>
+                <p class="card-models">Модели: <span>F2-H, F2-Plus</span></p>
+              </div>
+            </article>
+          </div>
+        </section>
       </div>
-    </article>
+    </main>
+    <script>
+      (function () {
+        const buttons = Array.from(document.querySelectorAll("[data-view]"));
+        const sections = Array.from(document.querySelectorAll(".view"));
+        const views = new Set(["home", "order", "catalog"]);
 
-    <article class="card">
-      <img src="images/image56.jpeg" alt="Фото детали">
-      <div class="meta">
-        <div class="row"><span class="label">Артикул:</span> 8G20018_F2_К1</div>
-        <div class="row"><span class="label">Наименование по накладной:</span> (Dr.Coffee)_8G20018_F2_К1 Капучинатор с колпачком пенообразователя</div>
-        <div class="row"><span class="label">Внутренее наименование</span> (Dr.Coffee)_8G20018_F2_К1 Капучинатор с колпачком пенообразователя</div>
-      </div>
-    </article>
+        const setView = (view) => {
+          const active = views.has(view) ? view : "home";
+          sections.forEach((section) => {
+            section.classList.toggle("is-active", section.id === active);
+          });
+          buttons.forEach((button) => {
+            const isActive = button.dataset.view === active;
+            button.classList.toggle("btn-primary", isActive);
+            button.classList.toggle("btn-ghost", !isActive);
+            button.setAttribute("aria-pressed", String(isActive));
+          });
+        };
 
-    <article class="card">
-      <img src="images/image3.jpeg" alt="Фото детали">
-      <div class="meta">
-        <div class="row"><span class="label">Артикул:</span> 8.W.4.0041</div>
-        <div class="row"><span class="label">Наименование по накладной:</span> Жиклер распределителя молока</div>
-        <div class="row"><span class="label">Внутренее наименование</span> Дюза капучинатора</div>
-      </div>
-    </article>
+        const onHashChange = () => {
+          const hash = window.location.hash.replace("#", "");
+          setView(hash || "home");
+        };
 
-    <article class="card">
-      <img src="images/image2.jpeg" alt="Фото детали">
-      <div class="meta">
-        <div class="row"><span class="label">Артикул:</span> 8.G.1.0004</div>
-        <div class="row"><span class="label">Наименование по накладной:</span> Кольцо поршня верхнее 37.69x3.53</div>
-        <div class="row"><span class="label">Внутренее наименование</span> Кольцо поршня заварного блока 37.69 x 3.53</div>
-      </div>
-    </article>
-
-    <article class="card">
-      <img src="images/image5.jpeg" alt="Фото детали">
-      <div class="meta">
-        <div class="row"><span class="label">Артикул:</span> ТО1</div>
-        <div class="row"><span class="label">Наименование по накладной:</span> и</div>
-        <div class="row"><span class="label">Внутренее наименование</span> ТО2</div>
-      </div>
-    </article>
-
-    <article class="card">
-      <img src="images/image6.jpeg" alt="Фото детали">
-      <div class="meta">
-        <div class="row"><span class="label">Артикул:</span> (ТО1+ТО2)</div>
-        <div class="row"><span class="label">Наименование по накладной:</span> 8.G.1.0005</div>
-        <div class="row"><span class="label">Внутренее наименование</span> Кольцо уплотнительное 8.5x 1.8</div>
-      </div>
-    </article>
-
-    <article class="card">
-      <img src="images/image7.jpeg" alt="Фото детали">
-      <div class="meta">
-        <div class="row"><span class="label">Артикул:</span> Кольцо уплотнительное 8.5x 1.8 крем-клапана</div>
-        <div class="row"><span class="label">Наименование по накладной:</span> 8.G.1.0008</div>
-        <div class="row"><span class="label">Внутренее наименование</span> Кольцо уплотнительное 3.3x2.0</div>
-      </div>
-    </article>
-
-    <article class="card">
-      <img src="images/image8.jpeg" alt="Фото детали">
-      <div class="meta">
-        <div class="row"><span class="label">Артикул:</span> Кольцо уплотнительное 3.3x2.0 T-переходника трубки помпы</div>
-        <div class="row"><span class="label">Наименование по накладной:</span> 8.W.5.0023</div>
-        <div class="row"><span class="label">Внутренее наименование</span> Крепежная клипса</div>
-      </div>
-    </article>
-
-    <article class="card">
-      <img src="images/image1.jpeg" alt="Фото детали">
-      <div class="meta">
-        <div class="row"><span class="label">Артикул:</span> Фиксирующая  скоба трубок</div>
-        <div class="row"><span class="label">Наименование по накладной:</span> 8.D.3.0037</div>
-        <div class="row"><span class="label">Внутренее наименование</span> 8.D.3.0037</div>
-        <div class="row"><span class="label">Модель кофемашины:</span> Трансформатор</div>
-      </div>
-    </article>
-
-    <article class="card">
-      <img src="images/image9.jpeg" alt="Фото детали">
-      <div class="meta">
-        <div class="row"><span class="label">Артикул:</span> Трансформатор кофемашины 220/20V 1.5A</div>
-        <div class="row"><span class="label">Наименование по накладной:</span> 8.S.1.0161</div>
-        <div class="row"><span class="label">Внутренее наименование</span> Направляющая нижнего поршня</div>
-        <div class="row"><span class="label">Модель кофемашины:</span> Трансформатор</div>
-      </div>
-    </article>
-
-    <article class="card">
-      <img src="images/image10.jpeg" alt="Фото детали">
-      <div class="meta">
-        <div class="row"><span class="label">Артикул:</span> F2-H / F2-Plus/F3 /F30</div>
-        <div class="row"><span class="label">Наименование по накладной:</span> 8.S.1.0163</div>
-        <div class="row"><span class="label">Внутренее наименование</span> Стакан поршня Зу</div>
-      </div>
-    </article>
-
-    <article class="card">
-      <img src="images/image11.jpeg" alt="Фото детали">
-      <div class="meta">
-        <div class="row"><span class="label">Артикул:</span> Пластиковый стакан поршня заварного блока</div>
-        <div class="row"><span class="label">Наименование по накладной:</span> 8.G.2.0048</div>
-        <div class="row"><span class="label">Внутренее наименование</span> Капучинатор</div>
-      </div>
-    </article>
-
-    <article class="card">
-      <img src="images/image12.jpeg" alt="Фото детали">
-      <div class="meta">
-        <div class="row"><span class="label">Артикул:</span> 8.D.3.0021</div>
-        <div class="row"><span class="label">Наименование по накладной:</span> Клапан 2 ходовой</div>
-        <div class="row"><span class="label">Внутренее наименование</span> Клапан горячей воды 2-х ходовой</div>
-      </div>
-    </article>
-
-    <article class="card">
-      <img src="images/image13.jpeg" alt="Фото детали">
-      <div class="meta">
-        <div class="row"><span class="label">Артикул:</span> Поставляется только в комплектах</div>
-        <div class="row"><span class="label">Наименование по накладной:</span> ТО2</div>
-        <div class="row"><span class="label">Внутренее наименование</span> (ТО1+ТО2)</div>
-      </div>
-    </article>
-
-    <article class="card">
-      <img src="images/image14.jpeg" alt="Фото детали">
-      <div class="meta">
-        <div class="row"><span class="label">Артикул:</span> 8.S.1.0164</div>
-        <div class="row"><span class="label">Наименование по накладной:</span> Лапка сбрасыватель</div>
-        <div class="row"><span class="label">Внутренее наименование</span> Лапка сброса отработанного кофе</div>
-      </div>
-    </article>
-
-    <article class="card">
-      <img src="images/image15.jpeg" alt="Фото детали">
-      <div class="meta">
-        <div class="row"><span class="label">Артикул:</span> 8.S.1.0189</div>
-        <div class="row"><span class="label">Наименование по накладной:</span> Распределитель молока в капучинаторе</div>
-        <div class="row"><span class="label">Внутренее наименование</span> Форсунка капучинатора</div>
-      </div>
-    </article>
-
-    <article class="card">
-      <img src="images/image16.jpeg" alt="Фото детали">
-      <div class="meta">
-        <div class="row"><span class="label">Артикул:</span> 7.NN.0494</div>
-        <div class="row"><span class="label">Наименование по накладной:</span> Приемник танка воды в сборе с сальником</div>
-        <div class="row"><span class="label">Внутренее наименование</span> Адаптер для бака воды ( в сборе)</div>
-      </div>
-    </article>
-
-    <article class="card">
-      <img src="images/image17.jpeg" alt="Фото детали">
-      <div class="meta">
-        <div class="row"><span class="label">Артикул:</span> 8.S.1.0096</div>
-        <div class="row"><span class="label">Наименование по накладной:</span> Шестерня передачи привода з/у</div>
-        <div class="row"><span class="label">Внутренее наименование</span> Шестерня мотор-редуктора заварочного узла</div>
-      </div>
-    </article>
-
-    <article class="card">
-      <img src="images/image18.jpeg" alt="Фото детали">
-      <div class="meta">
-        <div class="row"><span class="label">Артикул:</span> 8.G.3.0011_F2</div>
-        <div class="row"><span class="label">Наименование по накладной:</span> Тефлоновая трубка 600 мм</div>
-        <div class="row"><span class="label">Внутренее наименование</span> Тефлоновая трубка</div>
-      </div>
-    </article>
-
-    <article class="card">
-      <img src="images/image19.jpeg" alt="Фото детали">
-      <div class="meta">
-        <div class="row"><span class="label">Артикул:</span> 600 мм</div>
-        <div class="row"><span class="label">Наименование по накладной:</span> 8.S.1.0171</div>
-        <div class="row"><span class="label">Внутренее наименование</span> Втулка-трубка в верхнем поршне</div>
-      </div>
-    </article>
-
-    <article class="card">
-      <img src="images/image20.jpeg" alt="Фото детали">
-      <div class="meta">
-        <div class="row"><span class="label">Артикул:</span> Втулка-трубка верхнего поршня</div>
-        <div class="row"><span class="label">Наименование по накладной:</span> 7.NN.0022</div>
-        <div class="row"><span class="label">Внутренее наименование</span> Нижняя часть дисперсера 2 чашки</div>
-      </div>
-    </article>
-
-    <article class="card">
-      <img src="images/image21.jpeg" alt="Фото детали">
-      <div class="meta">
-        <div class="row"><span class="label">Артикул:</span> Нижняя часть дисперсера с двойным капучинатором в сборе</div>
-        <div class="row"><span class="label">Наименование по накладной:</span> 7.NN.0012</div>
-        <div class="row"><span class="label">Внутренее наименование</span> Мембрана после помпы_F2</div>
-        <div class="row"><span class="label">Модель кофемашины:</span> Мембрана помпы</div>
-      </div>
-    </article>
-
-    <article class="card">
-      <img src="images/image22.jpeg" alt="Фото детали">
-      <div class="meta">
-        <div class="row"><span class="label">Артикул:</span> 8.D.1.0102</div>
-        <div class="row"><span class="label">Наименование по накладной:</span> Плата интерфейса</div>
-        <div class="row"><span class="label">Внутренее наименование</span> Плата HMI</div>
-        <div class="row"><span class="label">Модель кофемашины:</span> Мембрана помпы</div>
-      </div>
-    </article>
-
-    <article class="card">
-      <img src="images/image23.jpeg" alt="Фото детали">
-      <div class="meta">
-        <div class="row"><span class="label">Артикул:</span> 8.G.1.0026</div>
-        <div class="row"><span class="label">Наименование по накладной:</span> Уплотнитель 37,77x2,62</div>
-        <div class="row"><span class="label">Внутренее наименование</span> Уплотнитель стакана миксера 37.77x2.62</div>
-      </div>
-    </article>
-
-    <article class="card">
-      <img src="images/image24.jpeg" alt="Фото детали">
-      <div class="meta">
-        <div class="row"><span class="label">Артикул:</span> F2-Plus</div>
-        <div class="row"><span class="label">Наименование по накладной:</span> 8.G.2.0030</div>
-        <div class="row"><span class="label">Внутренее наименование</span> Сальник миксера</div>
-      </div>
-    </article>
-
-    <article class="card">
-      <img src="images/image23.jpeg" alt="Фото детали">
-      <div class="meta">
-        <div class="row"><span class="label">Артикул:</span> Уплотнение V-ring мотора миксера</div>
-        <div class="row"><span class="label">Наименование по накладной:</span> 8.G.1.0011</div>
-        <div class="row"><span class="label">Внутренее наименование</span> Уплотнитель 5.0x2.0</div>
-      </div>
-    </article>
-
-    <article class="card">
-      <img src="images/image25.jpeg" alt="Фото детали">
-      <div class="meta">
-        <div class="row"><span class="label">Артикул:</span> Уплотнение 5x2 от помпы к Т-обр. переходнику</div>
-        <div class="row"><span class="label">Наименование по накладной:</span> 8.W.5.0011</div>
-        <div class="row"><span class="label">Внутренее наименование</span> Торсионная пружина</div>
-      </div>
-    </article>
-
-    <article class="card">
-      <img src="images/image26.jpeg" alt="Фото детали">
-      <div class="meta">
-        <div class="row"><span class="label">Артикул:</span> Пружина лапки сбрасывателя ЦУ</div>
-        <div class="row"><span class="label">Наименование по накладной:</span> 8.G.1.0013</div>
-        <div class="row"><span class="label">Внутренее наименование</span> Уплотнитель 5.6x1.8</div>
-      </div>
-    </article>
-
-    <article class="card">
-      <img src="images/image27.jpeg" alt="Фото детали">
-      <div class="meta">
-        <div class="row"><span class="label">Артикул:</span> Уплотнение O-Ring 5.6x1.8 выхода трубки-втулки верхн.поршня</div>
-        <div class="row"><span class="label">Наименование по накладной:</span> 8.D.1.0026</div>
-        <div class="row"><span class="label">Внутренее наименование</span> Плата управления F2</div>
-      </div>
-    </article>
-
-    <article class="card">
-      <img src="images/image28.jpeg" alt="Фото детали">
-      <div class="meta">
-        <div class="row"><span class="label">Артикул:</span> Силовая плата кофемашины F2</div>
-        <div class="row"><span class="label">Наименование по накладной:</span> 8.G.1.0014</div>
-        <div class="row"><span class="label">Внутренее наименование</span> Кольцо вспенивателя</div>
-      </div>
-    </article>
-
-    <article class="card">
-      <img src="images/image29.jpeg" alt="Фото детали">
-      <div class="meta">
-        <div class="row"><span class="label">Артикул:</span> Уплотн. кольцо носиков раздатчика O-ring 5x2.5</div>
-        <div class="row"><span class="label">Наименование по накладной:</span> 8.S.1.0319</div>
-        <div class="row"><span class="label">Внутренее наименование</span> Т-образный соединитель трубок 9 мм</div>
-      </div>
-    </article>
-
-    <article class="card">
-      <img src="images/image30.jpeg" alt="Фото детали">
-      <div class="meta">
-        <div class="row"><span class="label">Артикул:</span> Тройник Т-образный подачи молока</div>
-        <div class="row"><span class="label">Наименование по накладной:</span> 8.S.1.0342</div>
-        <div class="row"><span class="label">Внутренее наименование</span> I-образный соединитель 3x6</div>
-      </div>
-    </article>
-
-    <article class="card">
-      <img src="images/image31.jpeg" alt="Фото детали">
-      <div class="meta">
-        <div class="row"><span class="label">Артикул:</span> Коннектор прямой 3x6 выход воздушного клапана</div>
-        <div class="row"><span class="label">Наименование по накладной:</span> 8.S.1.0347</div>
-        <div class="row"><span class="label">Внутренее наименование</span> Воздухозаборник F2</div>
-      </div>
-    </article>
-
-    <article class="card">
-      <img src="images/image31.jpeg" alt="Фото детали">
-      <div class="meta">
-        <div class="row"><span class="label">Артикул:</span> I-образный соединитель трубок</div>
-        <div class="row"><span class="label">Наименование по накладной:</span> Соединитель прямой под силикон трубку</div>
-        <div class="row"><span class="label">Внутренее наименование</span> 7.NN.0019</div>
-      </div>
-    </article>
-
-    <article class="card">
-      <img src="images/image32.jpeg" alt="Фото детали">
-      <div class="meta">
-        <div class="row"><span class="label">Артикул:</span> Клапан 5 bar</div>
-        <div class="row"><span class="label">Наименование по накладной:</span> Предохранительный клапан 5 bar</div>
-        <div class="row"><span class="label">Внутренее наименование</span> Предохранительный клапан 5 bar</div>
-      </div>
-    </article>
-
-    <article class="card">
-      <img src="images/image32.jpeg" alt="Фото детали">
-      <div class="meta">
-        <div class="row"><span class="label">Артикул:</span> 7.NN.0044</div>
-        <div class="row"><span class="label">Наименование по накладной:</span> Дисплей в сборе</div>
-        <div class="row"><span class="label">Внутренее наименование</span> 7.NN.0069</div>
-      </div>
-    </article>
-
-    <article class="card">
-      <img src="images/image33.jpeg" alt="Фото детали">
-      <div class="meta">
-        <div class="row"><span class="label">Артикул:</span> Клапан 15 bar</div>
-        <div class="row"><span class="label">Наименование по накладной:</span> Предохранительный клапан 15 bar</div>
-        <div class="row"><span class="label">Внутренее наименование</span> 7.NN.0185</div>
-      </div>
-    </article>
-
-    <article class="card">
-      <img src="images/image34.jpeg" alt="Фото детали">
-      <div class="meta">
-        <div class="row"><span class="label">Артикул:</span> Паровой бойлер</div>
-        <div class="row"><span class="label">Наименование по накладной:</span> 7.NN.0186</div>
-        <div class="row"><span class="label">Внутренее наименование</span> Кофейный бойлер</div>
-        <div class="row"><span class="label">Модель кофемашины:</span> Мембрана помпы</div>
-      </div>
-    </article>
-
-    <article class="card">
-      <img src="images/image35.jpeg" alt="Фото детали">
-      <div class="meta">
-        <div class="row"><span class="label">Артикул:</span> Бойлер кипятка</div>
-        <div class="row"><span class="label">Наименование по накладной:</span> 7.NN.0371</div>
-        <div class="row"><span class="label">Внутренее наименование</span> 7.NN.0371</div>
-      </div>
-    </article>
-
-    <article class="card">
-      <img src="images/image36.jpeg" alt="Фото детали">
-      <div class="meta">
-        <div class="row"><span class="label">Артикул:</span> Односторонний клапан</div>
-        <div class="row"><span class="label">Наименование по накладной:</span> Запорный Клапан бункера воды</div>
-        <div class="row"><span class="label">Внутренее наименование</span> 8.D.3.0060</div>
-        <div class="row"><span class="label">Модель кофемашины:</span> Мотор-редуктор выдачи растворимых порошков 100Вт.</div>
-      </div>
-    </article>
-
-    <article class="card">
-      <img src="images/image37.jpeg" alt="Фото детали">
-      <div class="meta">
-        <div class="row"><span class="label">Артикул:</span> Мотор-редуктор шнека бункера сыпучих продуктов</div>
-        <div class="row"><span class="label">Наименование по накладной:</span> 7.NN.0119</div>
-        <div class="row"><span class="label">Внутренее наименование</span> Жернов верхний в сборе</div>
-      </div>
-    </article>
-
-    <article class="card">
-      <img src="images/image38.jpeg" alt="Фото детали">
-      <div class="meta">
-        <div class="row"><span class="label">Артикул:</span> 8.S.1.0521</div>
-        <div class="row"><span class="label">Наименование по накладной:</span> Коннектор 5-ти ходовой F3</div>
-        <div class="row"><span class="label">Внутренее наименование</span> Коннектор 5 выходов F3</div>
-      </div>
-    </article>
-
-    <article class="card">
-      <img src="images/image39.jpeg" alt="Фото детали">
-      <div class="meta">
-        <div class="row"><span class="label">Артикул:</span> F3</div>
-        <div class="row"><span class="label">Наименование по накладной:</span> 8.W.5.0054</div>
-        <div class="row"><span class="label">Внутренее наименование</span> Пружина силиконовой трубки выхода молока</div>
-      </div>
-    </article>
-
-    <article class="card">
-      <img src="images/image40.jpeg" alt="Фото детали">
-      <div class="meta">
-        <div class="row"><span class="label">Артикул:</span> Пружина силиконового шланга выхода молока в раздатчике</div>
-        <div class="row"><span class="label">Наименование по накладной:</span> 8.S.1.0185</div>
-        <div class="row"><span class="label">Внутренее наименование</span> Переходник трубок диспенсера подачи кофе</div>
-      </div>
-    </article>
-
-    <article class="card">
-      <img src="images/image41.jpeg" alt="Фото детали">
-      <div class="meta">
-        <div class="row"><span class="label">Артикул:</span> Переходник трубок в диспенсер кофемашины</div>
-        <div class="row"><span class="label">Наименование по накладной:</span> 8.S.1.0181</div>
-        <div class="row"><span class="label">Внутренее наименование</span> Адаптер выхода кофе</div>
-      </div>
-    </article>
-
-    <article class="card">
-      <img src="images/image42.jpeg" alt="Фото детали">
-      <div class="meta">
-        <div class="row"><span class="label">Артикул:</span> Адаптер выхода кофе в диспенсере</div>
-        <div class="row"><span class="label">Наименование по накладной:</span> 8.W.6.0055</div>
-        <div class="row"><span class="label">Внутренее наименование</span> Сетка поршня (верх, нижний)</div>
-      </div>
-    </article>
-
-    <article class="card">
-      <img src="images/image43.jpeg" alt="Фото детали">
-      <div class="meta">
-        <div class="row"><span class="label">Артикул:</span> Сетка прошня заварочного блока верхнего (нижнего)</div>
-        <div class="row"><span class="label">Наименование по накладной:</span> 8.S.1.0170</div>
-        <div class="row"><span class="label">Внутренее наименование</span> Воронка молотого кофе</div>
-      </div>
-    </article>
-
-    <article class="card">
-      <img src="images/image44.jpeg" alt="Фото детали">
-      <div class="meta">
-        <div class="row"><span class="label">Артикул:</span> Воронка выхода  молотого кофе заварного блока</div>
-        <div class="row"><span class="label">Наименование по накладной:</span> 8.W.5.0012</div>
-        <div class="row"><span class="label">Внутренее наименование</span> Пружинка воронки молотого кофе</div>
-      </div>
-    </article>
-
-    <article class="card">
-      <img src="images/image45.jpeg" alt="Фото детали">
-      <div class="meta">
-        <div class="row"><span class="label">Артикул:</span> Пружинка воронки выхода молотого кофе</div>
-        <div class="row"><span class="label">Наименование по накладной:</span> 8.S.1.0162</div>
-        <div class="row"><span class="label">Внутренее наименование</span> Нижний поршень Зу</div>
-        <div class="row"><span class="label">Модель кофемашины:</span> Нижний поршень заварного устройства</div>
-      </div>
-    </article>
-
-    <article class="card">
-      <img src="images/image46.png" alt="Фото детали">
-      <div class="meta">
-        <div class="row"><span class="label">Артикул:</span> 8.S.1.0167</div>
-        <div class="row"><span class="label">Наименование по накладной:</span> Верхний поршень ЗУ</div>
-        <div class="row"><span class="label">Внутренее наименование</span> Верхний поршень заварного устройства</div>
-        <div class="row"><span class="label">Модель кофемашины:</span> Нижний поршень заварного устройства</div>
-      </div>
-    </article>
-
-    <article class="card">
-      <img src="images/image47.jpeg" alt="Фото детали">
-      <div class="meta">
-        <div class="row"><span class="label">Артикул:</span> 8.S.1.0165</div>
-        <div class="row"><span class="label">Наименование по накладной:</span> Направляющая стакана поршня ЗУ</div>
-        <div class="row"><span class="label">Внутренее наименование</span> Направляющая стакана заварного устройства</div>
-        <div class="row"><span class="label">Модель кофемашины:</span> Нижний поршень заварного устройства</div>
-      </div>
-    </article>
-
-    <article class="card">
-      <img src="images/image48.jpeg" alt="Фото детали">
-      <div class="meta">
-        <div class="row"><span class="label">Артикул:</span> F2-H / F2-Plus / F3</div>
-        <div class="row"><span class="label">Наименование по накладной:</span> 8.W.1.0006</div>
-        <div class="row"><span class="label">Внутренее наименование</span> 8.W.1.0006</div>
-        <div class="row"><span class="label">Модель кофемашины:</span> Нижний поршень заварного устройства</div>
-      </div>
-    </article>
-
-    <article class="card">
-      <img src="images/image49.jpeg" alt="Фото детали">
-      <div class="meta">
-        <div class="row"><span class="label">Артикул:</span> Гильза стакана Зу металл</div>
-        <div class="row"><span class="label">Наименование по накладной:</span> Гильза стакана заварочного устройства, металл</div>
-        <div class="row"><span class="label">Внутренее наименование</span> 8.G.1.0012</div>
-      </div>
-    </article>
-
-    <article class="card">
-      <img src="images/image50.jpeg" alt="Фото детали">
-      <div class="meta">
-        <div class="row"><span class="label">Артикул:</span> Уплотнение O-Ring штуцера подачи воды 4x1.8</div>
-        <div class="row"><span class="label">Наименование по накладной:</span> Уплотнение O-Ring 4.0x1.8 штуцера подачи воды в заварной блок</div>
-        <div class="row"><span class="label">Внутренее наименование</span> 8.S.1.0557</div>
-      </div>
-    </article>
-
-    <article class="card">
-      <img src="images/image51.jpeg" alt="Фото детали">
-      <div class="meta">
-        <div class="row"><span class="label">Артикул:</span> Фиксатор клапана бункера воды</div>
-        <div class="row"><span class="label">Наименование по накладной:</span> 8.S.1.0195</div>
-        <div class="row"><span class="label">Внутренее наименование</span> Выпускной адаптер клапана бака воды</div>
-      </div>
-    </article>
-
-    <article class="card">
-      <img src="images/image52.jpeg" alt="Фото детали">
-      <div class="meta">
-        <div class="row"><span class="label">Артикул:</span> Корпус адаптера бака воды (не в сборе)</div>
-        <div class="row"><span class="label">Наименование по накладной:</span> 8.G.1.0039</div>
-        <div class="row"><span class="label">Внутренее наименование</span> 8.G.1.0039</div>
-      </div>
-    </article>
-
-    <article class="card">
-      <img src="images/image53.jpeg" alt="Фото детали">
-      <div class="meta">
-        <div class="row"><span class="label">Артикул:</span> Уплотнительное кольцо штуцера бойлера 9.5x1.5</div>
-        <div class="row"><span class="label">Наименование по накладной:</span> Уплотнительное кольцо штуцера бойлера 9.5x1.5</div>
-        <div class="row"><span class="label">Внутренее наименование</span> 8.W.4.0040</div>
-      </div>
-    </article>
-
-    <article class="card">
-      <img src="images/image54.jpeg" alt="Фото детали">
-      <div class="meta">
-        <div class="row"><span class="label">Артикул:</span> Цанговое соединение D=4 бойлера пара</div>
-        <div class="row"><span class="label">Наименование по накладной:</span> Штуцер бойлера пара/воды под скобу (металл)</div>
-        <div class="row"><span class="label">Внутренее наименование</span> 8.D.3.0083</div>
-      </div>
-    </article>
-
-    <article class="card">
-      <img src="images/image55.jpeg" alt="Фото детали">
-      <div class="meta">
-        <div class="row"><span class="label">Артикул:</span> Термопредохранитель 155 град С</div>
-        <div class="row"><span class="label">Наименование по накладной:</span> 8.D.3.0100</div>
-        <div class="row"><span class="label">Внутренее наименование</span> Шуп парового бойлера</div>
-      </div>
-    </article>
-  </main>
-</body>
+        window.addEventListener("hashchange", onHashChange);
+        onHashChange();
+      })();
+    </script>
+  </body>
 </html>
