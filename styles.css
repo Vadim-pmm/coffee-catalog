@@ -198,6 +198,7 @@ img {
   padding: 18px 20px 22px;
   display: grid;
   gap: 8px;
+  flex: 1;
 }
 
 .card-title {
@@ -223,6 +224,52 @@ img {
   font-weight: 600;
 }
 
+.card-footer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: auto;
+  padding: 12px 14px 12px 16px;
+  border-top: 1px solid rgba(184, 134, 75, 0.35);
+  border-bottom-left-radius: calc(var(--radius-md) - 1px);
+  border-bottom-right-radius: calc(var(--radius-md) - 1px);
+  background: linear-gradient(180deg, rgba(255, 250, 243, 0.92), rgba(245, 231, 211, 0.92));
+}
+
+.card-footer::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 4px;
+  background: linear-gradient(180deg, #c89352, #a9753f);
+}
+
+.card-footer-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  padding: 3px 9px;
+  border: 1px solid rgba(74, 44, 28, 0.3);
+  background: rgba(255, 250, 243, 0.75);
+  color: var(--mocha);
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 10px;
+  letter-spacing: 1.1px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.card-footer-text {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 1.4;
+  font-weight: 600;
+  color: var(--mocha);
+}
+
 @media (max-width: 720px) {
   .hero {
     padding: 36px 28px;
@@ -235,5 +282,10 @@ img {
 
   .btn {
     width: 100%;
+  }
+
+  .card-footer {
+    gap: 7px;
+    padding: 11px 12px 11px 14px;
   }
 }

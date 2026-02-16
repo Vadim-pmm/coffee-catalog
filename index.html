@@ -21,14 +21,22 @@
             <a class="btn btn-primary" href="#home" data-view="home">На главную</a>
             <a class="btn btn-ghost" href="#order" data-view="order">Заказ</a>
             <a class="btn btn-ghost" href="#catalog" data-view="catalog">Каталог деталей</a>
+            <a class="btn btn-ghost" href="#kit" data-view="kit">Детали в комплектах ТО</a>
           </div>
         </section>
 
-        <section class="section view" id="order"></section>
+        <section class="section view" id="order">
+          <script data-b24-form="inline/15/1n1u0u" data-skip-moving="true">
+            (function(w,d,u){
+              var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/180000|0);
+              var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
+            })(window,document,'https://n001.ext.insitech.network/upload/crm/form/loader_15_1n1u0u.js');
+          </script>
+        </section>
 
         <section class="section view" id="catalog">
           <h2 class="section-title">Каталог деталей</h2>
-          <p class="section-meta">Всего позиций: 60</p>
+          <p class="section-meta" id="catalog-count">Всего позиций: 60</p>
           <div class="cards">
             <article class="card">
               <div class="card-media">
@@ -654,13 +662,79 @@
             </article>
           </div>
         </section>
+
+        <section class="section view" id="kit">
+          <h2 class="section-title">Детали, продающиеся только в составе комплектов ТО</h2>
+          <p class="section-meta" id="kit-count">Всего позиций: 0</p>
+          <div class="cards" id="kit-cards"></div>
+        </section>
       </div>
     </main>
     <script>
       (function () {
         const buttons = Array.from(document.querySelectorAll("[data-view]"));
         const sections = Array.from(document.querySelectorAll(".view"));
-        const views = new Set(["home", "order", "catalog"]);
+        const views = new Set(["home", "order", "catalog", "kit"]);
+        const kitOnlyText = "Поставляется только в комплектах ТО1 и ТО2";
+
+        const normalizeText = (value) => value.replace(/\s+/g, " ").trim();
+
+        const upgradeKitOnlyNotes = () => {
+          const notes = Array.from(document.querySelectorAll(".card-note"));
+          notes.forEach((note) => {
+            const text = normalizeText(note.textContent.replace("Примечание:", ""));
+            if (text !== kitOnlyText) {
+              return;
+            }
+
+            const card = note.closest(".card");
+            if (!card || card.querySelector(".card-footer-kit")) {
+              return;
+            }
+
+            const footer = document.createElement("footer");
+            footer.className = "card-footer card-footer-kit";
+
+            const badge = document.createElement("span");
+            badge.className = "card-footer-badge";
+            badge.textContent = "ТО1/ТО2";
+
+            const message = document.createElement("span");
+            message.className = "card-footer-text";
+            message.textContent = kitOnlyText;
+
+            footer.append(badge, message);
+            note.remove();
+            card.appendChild(footer);
+          });
+        };
+
+        const moveKitOnlyCards = () => {
+          const kitCardsContainer = document.querySelector("#kit-cards");
+          if (!kitCardsContainer) {
+            return;
+          }
+
+          const kitCards = Array.from(document.querySelectorAll("#catalog .card")).filter((card) =>
+            card.querySelector(".card-footer-kit")
+          );
+          kitCards.forEach((card) => {
+            const footer = card.querySelector(".card-footer-kit");
+            if (footer) {
+              footer.remove();
+            }
+            kitCardsContainer.appendChild(card);
+          });
+
+          const catalogCount = document.querySelector("#catalog-count");
+          const kitCount = document.querySelector("#kit-count");
+          if (catalogCount) {
+            catalogCount.textContent = `Всего позиций: ${document.querySelectorAll("#catalog .card").length}`;
+          }
+          if (kitCount) {
+            kitCount.textContent = `Всего позиций: ${document.querySelectorAll("#kit .card").length}`;
+          }
+        };
 
         const setView = (view) => {
           const active = views.has(view) ? view : "home";
@@ -680,6 +754,8 @@
           setView(hash || "home");
         };
 
+        upgradeKitOnlyNotes();
+        moveKitOnlyCards();
         window.addEventListener("hashchange", onHashChange);
         onHashChange();
       })();
