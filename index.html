@@ -8,6 +8,110 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+      .kit-tabs {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 22px;
+      }
+
+      .kit-tab {
+        border: 1px solid rgba(74, 44, 28, 0.2);
+        background: rgba(255, 250, 243, 0.92);
+        color: #4a2c1c;
+        border-radius: 999px;
+        padding: 14px 28px;
+        min-height: 52px;
+        font-family: "Montserrat", "Arial", sans-serif;
+        font-size: 16px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        cursor: pointer;
+      }
+
+      .kit-tab.is-active {
+        border-color: transparent;
+        background: #b8864b;
+        color: #1c120d;
+        box-shadow: 0 10px 20px rgba(184, 134, 75, 0.3);
+      }
+
+      .card[hidden] {
+        display: none !important;
+      }
+
+      .to-table-wrap {
+        margin-top: 24px;
+        background: rgba(255, 250, 243, 0.9);
+        border: 1px solid rgba(43, 26, 20, 0.12);
+        border-radius: 16px;
+        box-shadow: var(--shadow-soft);
+        overflow: hidden;
+      }
+
+      .to-table-title {
+        margin: 0;
+        padding: 18px 20px;
+        font-family: "Montserrat", "Arial", sans-serif;
+        font-size: 16px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        border-bottom: 1px solid rgba(43, 26, 20, 0.12);
+      }
+
+      .to-table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      .to-table th,
+      .to-table td {
+        text-align: left;
+        padding: 12px 14px;
+        font-family: "Montserrat", "Arial", sans-serif;
+        font-size: 14px;
+        line-height: 1.4;
+        border-bottom: 1px solid rgba(43, 26, 20, 0.1);
+      }
+
+      .to-table tbody td {
+        font-size: 15px;
+      }
+
+      .to-col-check,
+      .to-cell-check {
+        text-align: center;
+        width: 120px;
+      }
+
+      .to-cell-check-mark {
+        font-size: 18px;
+        line-height: 1;
+        font-weight: 700;
+        color: #2f6d3c;
+      }
+
+      .to-table th {
+        font-size: 12px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: rgba(43, 26, 20, 0.7);
+        background: rgba(43, 26, 20, 0.04);
+      }
+
+      .to-row-to1 {
+        background: rgba(194, 224, 201, 0.45);
+      }
+
+      .to-row-to2-extra {
+        background: rgba(253, 216, 184, 0.45);
+      }
+
+      .to-table tr:last-child td {
+        border-bottom: 0;
+      }
+    </style>
   </head>
   <body>
     <main class="page">
@@ -20,6 +124,7 @@
           <div class="actions">
             <a class="btn btn-primary" href="#home" data-view="home">На главную</a>
             <a class="btn btn-ghost" href="#order" data-view="order">Заказ</a>
+            <a class="btn btn-ghost" href="#to" data-view="to">Состав ТО</a>
             <a class="btn btn-ghost" href="#catalog" data-view="catalog">Каталог деталей</a>
             <a class="btn btn-ghost" href="#kit" data-view="kit">Детали в комплектах ТО</a>
           </div>
@@ -663,9 +768,164 @@
           </div>
         </section>
 
+        <section class="section view" id="to">
+          <h2 class="section-title">Состав ТО</h2>
+          <div class="to-table-wrap">
+            <h3 class="to-table-title">ТО</h3>
+            <table class="to-table" aria-label="ТО">
+              <thead>
+                <tr>
+                  <th>№</th>
+                  <th>Артикул</th>
+                  <th>Наименование</th>
+                  <th class="to-col-check">Карточка</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="to-row-to1">
+                  <td>1</td>
+                  <td>8G10004</td>
+                  <td>Кольцо O-ring φ37.69*φ3.53 верхнего и нижнего поршней</td>
+                  <td class="to-cell-check"></td>
+                </tr>
+                <tr class="to-row-to1">
+                  <td>2</td>
+                  <td>8G10005</td>
+                  <td>Кольцо уплотнительное 8.5x1.8</td>
+                  <td class="to-cell-check"></td>
+                </tr>
+                <tr class="to-row-to1">
+                  <td>3</td>
+                  <td>8G10014</td>
+                  <td>Уплотн. кольцо носиков O-ring 5x2.5</td>
+                  <td class="to-cell-check"></td>
+                </tr>
+                <tr class="to-row-to1">
+                  <td>4</td>
+                  <td>8G30001</td>
+                  <td>Трубка силиконовая 3x6</td>
+                  <td class="to-cell-check"><span class="to-cell-check-mark">✓</span></td>
+                </tr>
+                <tr class="to-row-to1">
+                  <td>5</td>
+                  <td>8G30008</td>
+                  <td>Трубка силиконовая</td>
+                  <td class="to-cell-check"><span class="to-cell-check-mark">✓</span></td>
+                </tr>
+                <tr class="to-row-to1">
+                  <td>6</td>
+                  <td>8S10319</td>
+                  <td>Т-образный тройник</td>
+                  <td class="to-cell-check"></td>
+                </tr>
+                <tr class="to-row-to1">
+                  <td>7</td>
+                  <td>8S10342</td>
+                  <td>Переходник-соединитель прямой 3x6</td>
+                  <td class="to-cell-check"></td>
+                </tr>
+                <tr class="to-row-to1">
+                  <td>8</td>
+                  <td>8S10347</td>
+                  <td>Воздухозаборник (микрофон)</td>
+                  <td class="to-cell-check"></td>
+                </tr>
+                <tr class="to-row-to1">
+                  <td>9</td>
+                  <td>8S10350</td>
+                  <td>Прямой коннектор</td>
+                  <td class="to-cell-check"></td>
+                </tr>
+                <tr class="to-row-to1">
+                  <td>10</td>
+                  <td>8G30011</td>
+                  <td>Тефлоновая трубка прессостата</td>
+                  <td class="to-cell-check"></td>
+                </tr>
+                <tr class="to-row-to1">
+                  <td>11</td>
+                  <td>8S10171</td>
+                  <td>Втулка-трубка верхнего поршня</td>
+                  <td class="to-cell-check"></td>
+                </tr>
+                <tr class="to-row-to1">
+                  <td>12</td>
+                  <td>7NN0012</td>
+                  <td>Мембрана помпы</td>
+                  <td class="to-cell-check"></td>
+                </tr>
+                <tr class="to-row-to1">
+                  <td>13</td>
+                  <td>8G10011</td>
+                  <td>Уплотнение o-ring 5x2</td>
+                  <td class="to-cell-check"></td>
+                </tr>
+                <tr class="to-row-to1">
+                  <td>14</td>
+                  <td>8G10013</td>
+                  <td>Уплотнение основы раздатчика O-ring 5,6x1,8</td>
+                  <td class="to-cell-check"></td>
+                </tr>
+                <tr class="to-row-to1">
+                  <td>15</td>
+                  <td>8S10189</td>
+                  <td>Жиклер каппучинатора F2</td>
+                  <td class="to-cell-check"></td>
+                </tr>
+                <tr class="to-row-to2-extra">
+                  <td>16</td>
+                  <td>7NN0019</td>
+                  <td>Клапан расширительный 5 Бар</td>
+                  <td class="to-cell-check"></td>
+                </tr>
+                <tr class="to-row-to2-extra">
+                  <td>17</td>
+                  <td>8W50011</td>
+                  <td>Пружина лапки сброса</td>
+                  <td class="to-cell-check"></td>
+                </tr>
+                <tr class="to-row-to2-extra">
+                  <td>18</td>
+                  <td>8S10164</td>
+                  <td>Лапка сбрасыватель отработанного кофе</td>
+                  <td class="to-cell-check"></td>
+                </tr>
+                <tr class="to-row-to2-extra">
+                  <td>19</td>
+                  <td>7NN0494</td>
+                  <td>Приемник танка воды</td>
+                  <td class="to-cell-check"></td>
+                </tr>
+                <tr class="to-row-to2-extra">
+                  <td>20</td>
+                  <td>8S10096</td>
+                  <td>Шестерня головной части мотора ЦУ</td>
+                  <td class="to-cell-check"></td>
+                </tr>
+                <tr class="to-row-to2-extra">
+                  <td>21</td>
+                  <td>8D30021</td>
+                  <td>Электромагнитный клапан горячей воды</td>
+                  <td class="to-cell-check"></td>
+                </tr>
+                <tr class="to-row-to2-extra">
+                  <td>22</td>
+                  <td>7NN0069</td>
+                  <td>Клапан 15 Бар F2H</td>
+                  <td class="to-cell-check"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
         <section class="section view" id="kit">
           <h2 class="section-title">Детали, продающиеся только в составе комплектов ТО</h2>
           <p class="section-meta" id="kit-count">Всего позиций: 0</p>
+          <div class="kit-tabs" role="tablist" aria-label="Комплекты ТО">
+            <button class="kit-tab is-active" type="button" role="tab" aria-selected="true" data-kit-tab="to1">ТО-1</button>
+            <button class="kit-tab" type="button" role="tab" aria-selected="false" data-kit-tab="to2">ТО-2</button>
+          </div>
           <div class="cards" id="kit-cards"></div>
         </section>
       </div>
@@ -673,11 +933,91 @@
     <script>
       (function () {
         const buttons = Array.from(document.querySelectorAll("[data-view]"));
+        const tabButtons = Array.from(document.querySelectorAll("[data-kit-tab]"));
         const sections = Array.from(document.querySelectorAll(".view"));
-        const views = new Set(["home", "order", "catalog", "kit"]);
+        const views = new Set(["home", "order", "to", "catalog", "kit"]);
         const kitOnlyText = "Поставляется только в комплектах ТО1 и ТО2";
+        const kitSets = {
+          to1: new Set([
+            "8G10004",
+            "8G10005",
+            "8G10014",
+            "8G30001",
+            "8G30008",
+            "8S10319",
+            "8S10342",
+            "8S10347",
+            "8S10350",
+            "8G30011",
+            "8S10171",
+            "7NN0012",
+            "8G10011",
+            "8G10013",
+            "8S10189"
+          ]),
+          to2: new Set([
+            "8G10004",
+            "8G10005",
+            "8G10014",
+            "8G30001",
+            "8G30008",
+            "8S10319",
+            "8S10342",
+            "8S10347",
+            "8S10350",
+            "8G30011",
+            "8S10171",
+            "7NN0012",
+            "8G10011",
+            "8G10013",
+            "8S10189",
+            "7NN0019",
+            "8W50011",
+            "8S10164",
+            "7NN0494",
+            "8S10096",
+            "8D30021",
+            "7NN0069"
+          ])
+        };
 
         const normalizeText = (value) => value.replace(/\s+/g, " ").trim();
+        const normalizeArticle = (value) => value.toUpperCase().replace(/[^A-Z0-9]/g, "");
+        const isCodeMatch = (articleCode, kitCode) => articleCode === kitCode || articleCode.startsWith(kitCode);
+
+        const getCardKits = (card) => {
+          const article = card.querySelector(".card-article span")?.textContent || "";
+          const normalizedArticle = normalizeArticle(article);
+          const kits = [];
+          if (Array.from(kitSets.to1).some((code) => isCodeMatch(normalizedArticle, code))) {
+            kits.push("to1");
+          }
+          if (Array.from(kitSets.to2).some((code) => isCodeMatch(normalizedArticle, code))) {
+            kits.push("to2");
+          }
+          return kits;
+        };
+
+        const setKitTab = (tab) => {
+          const activeTab = tab === "to2" ? "to2" : "to1";
+          const cards = Array.from(document.querySelectorAll("#kit-cards .card"));
+          cards.forEach((card) => {
+            const kits = (card.dataset.kits || "").split(/\s+/).filter(Boolean);
+            card.hidden = !kits.includes(activeTab);
+          });
+
+          tabButtons.forEach((button) => {
+            const isActive = button.dataset.kitTab === activeTab;
+            button.classList.toggle("is-active", isActive);
+            button.setAttribute("aria-selected", String(isActive));
+          });
+
+          const kitCount = document.querySelector("#kit-count");
+          if (kitCount) {
+            const visibleCount = cards.filter((card) => !card.hidden).length;
+            kitCount.textContent = `Всего позиций: ${visibleCount}`;
+          }
+        };
 
         const upgradeKitOnlyNotes = () => {
           const notes = Array.from(document.querySelectorAll(".card-note"));
@@ -719,6 +1059,12 @@
             card.querySelector(".card-footer-kit")
           );
           kitCards.forEach((card) => {
+            const kits = getCardKits(card);
+            if (!kits.length) {
+              return;
+            }
+            card.dataset.kits = kits.join(" ");
+
             const footer = card.querySelector(".card-footer-kit");
             if (footer) {
               footer.remove();
@@ -732,8 +1078,17 @@
             catalogCount.textContent = `Всего позиций: ${document.querySelectorAll("#catalog .card").length}`;
           }
           if (kitCount) {
-            kitCount.textContent = `Всего позиций: ${document.querySelectorAll("#kit .card").length}`;
+            kitCount.textContent = `Всего позиций: ${document.querySelectorAll("#kit-cards .card").length}`;
           }
+        };
+
+        const initKitTabs = () => {
+          tabButtons.forEach((button) => {
+            button.addEventListener("click", () => {
+              setKitTab(button.dataset.kitTab);
+            });
+          });
+          setKitTab("to1");
         };
 
         const setView = (view) => {
@@ -756,6 +1111,7 @@
 
         upgradeKitOnlyNotes();
         moveKitOnlyCards();
+        initKitTabs();
         window.addEventListener("hashchange", onHashChange);
         onHashChange();
       })();
