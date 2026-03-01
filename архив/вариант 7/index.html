@@ -137,15 +137,6 @@
         </section>
 
         <section class="section view" id="order">
-          <style>
-            #order .b24-form .b24-form-control-list-selector-item-price,
-            #order .b24-form .b24-form-control-list-selector-item-price-current,
-            #order .b24-form .b24-form-basket-pay,
-            #order .b24-form .b24-form-control-product-price,
-            #order .b24-form .b24-form-control-product-price-current {
-              display: none !important;
-            }
-          </style>
           <script data-b24-form="inline/15/1n1u0u" data-skip-moving="true">
             (function(w,d,u){
               var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/180000|0);
@@ -156,7 +147,7 @@
 
         <section class="section view" id="catalog">
           <h2 class="section-title">Каталог деталей</h2>
-          <p class="section-meta" id="catalog-count">Всего позиций: 63</p>
+          <p class="section-meta" id="catalog-count">Всего позиций: 60</p>
           <div class="cards">
             <article class="card">
               <div class="card-media">
@@ -170,7 +161,7 @@
             </article>
             <article class="card">
               <div class="card-media">
-                <img src="images/8G20018_F2_K1.webp" alt="(Dr.Coffee)_8G20018_F2_К1 Капучинатор с колпачком пенообразователя">
+                <img src="images/8G20018_F2_К1.webp" alt="(Dr.Coffee)_8G20018_F2_К1 Капучинатор с колпачком пенообразователя">
               </div>
               <div class="card-body">
                 <h3 class="card-title">(Dr.Coffee)_8G20018_F2_К1 Капучинатор с колпачком пенообразователя</h3>
@@ -526,36 +517,6 @@
               <div class="card-body">
                 <h3 class="card-title">Заварное устройство</h3>
                 <p class="card-article">Артикул: <span>7NN0040</span></p>
-                <p class="card-models">Модели: <span>F2-H, F2-Plus</span></p>
-              </div>
-            </article>
-            <article class="card">
-              <div class="card-media">
-                <img src="images/7NN0047_F2.webp" alt="Двигатель ЗУ F2 в сборе">
-              </div>
-              <div class="card-body">
-                <h3 class="card-title">Двигатель ЗУ F2 в сборе</h3>
-                <p class="card-article">Артикул: <span>7.NN.0047</span></p>
-                <p class="card-models">Модели: <span>F2-H, F2-Plus</span></p>
-              </div>
-            </article>
-            <article class="card">
-              <div class="card-media">
-                <img src="images/7NN0042_F2_left.webp" alt="Левая кофемолка">
-              </div>
-              <div class="card-body">
-                <h3 class="card-title">Левая кофемолка</h3>
-                <p class="card-article">Артикул: <span>7.NN.0042</span></p>
-                <p class="card-models">Модели: <span>F2-H, F2-Plus</span></p>
-              </div>
-            </article>
-            <article class="card">
-              <div class="card-media">
-                <img src="images/7NN0042_F2_right.webp" alt="Правая кофемолка">
-              </div>
-              <div class="card-body">
-                <h3 class="card-title">Правая кофемолка</h3>
-                <p class="card-article">Артикул: <span>7.NN.0042</span></p>
                 <p class="card-models">Модели: <span>F2-H, F2-Plus</span></p>
               </div>
             </article>
@@ -1182,33 +1143,14 @@
           });
         };
 
-        const syncView = (view) => {
-          const active = views.has(view) ? view : "home";
-          const nextHash = `#${active}`;
-
-          setView(active);
-
-          if (window.location.hash !== nextHash) {
-            window.history.pushState({ view: active }, "", nextHash);
-          }
-        };
-
         const onHashChange = () => {
           const hash = window.location.hash.replace("#", "");
           setView(hash || "home");
         };
 
-        buttons.forEach((button) => {
-          button.addEventListener("click", (event) => {
-            event.preventDefault();
-            syncView(button.dataset.view || "home");
-          });
-        });
-
         upgradeKitOnlyNotes();
         moveKitOnlyCards();
         initKitTabs();
-        window.addEventListener("popstate", onHashChange);
         window.addEventListener("hashchange", onHashChange);
         onHashChange();
       })();

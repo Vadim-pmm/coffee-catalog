@@ -8,116 +8,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
-    <style>
-      .kit-tabs {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-        margin-top: 22px;
-      }
-
-      .kit-tab {
-        border: 1px solid rgba(74, 44, 28, 0.2);
-        background: rgba(255, 250, 243, 0.92);
-        color: #4a2c1c;
-        border-radius: 999px;
-        padding: 14px 28px;
-        min-height: 52px;
-        font-family: "Montserrat", "Arial", sans-serif;
-        font-size: 16px;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        cursor: pointer;
-      }
-
-      .kit-tab.is-active {
-        border-color: transparent;
-        background: #b8864b;
-        color: #1c120d;
-        box-shadow: 0 10px 20px rgba(184, 134, 75, 0.3);
-      }
-
-      .card[hidden] {
-        display: none !important;
-      }
-
-      .to-table-wrap {
-        margin-top: 24px;
-        background: rgba(255, 250, 243, 0.9);
-        border: 1px solid rgba(43, 26, 20, 0.12);
-        border-radius: 16px;
-        box-shadow: var(--shadow-soft);
-        overflow: hidden;
-      }
-
-      .to-table-title {
-        margin: 0;
-        padding: 18px 20px;
-        font-family: "Montserrat", "Arial", sans-serif;
-        font-size: 16px;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        border-bottom: 1px solid rgba(43, 26, 20, 0.12);
-      }
-
-      .to-table {
-        width: 100%;
-        border-collapse: collapse;
-      }
-
-      .to-table th,
-      .to-table td {
-        text-align: left;
-        padding: 12px 14px;
-        font-family: "Montserrat", "Arial", sans-serif;
-        font-size: 14px;
-        line-height: 1.4;
-        border-bottom: 1px solid rgba(43, 26, 20, 0.1);
-      }
-
-      .to-table tbody td {
-        font-size: 15px;
-      }
-
-      .to-col-check,
-      .to-cell-check {
-        text-align: center;
-        width: 120px;
-      }
-
-      .to-col-qty,
-      .to-cell-qty {
-        text-align: center;
-        width: 90px;
-      }
-
-      .to-cell-check-mark {
-        font-size: 18px;
-        line-height: 1;
-        font-weight: 700;
-        color: #2f6d3c;
-      }
-
-      .to-table th {
-        font-size: 12px;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        color: rgba(43, 26, 20, 0.7);
-        background: rgba(43, 26, 20, 0.04);
-      }
-
-      .to-row-to1 {
-        background: rgba(194, 224, 201, 0.45);
-      }
-
-      .to-row-to2-extra {
-        background: rgba(253, 216, 184, 0.45);
-      }
-
-      .to-table tr:last-child td {
-        border-bottom: 0;
-      }
-    </style>
   </head>
   <body>
     <main class="page">
@@ -130,37 +20,19 @@
           <div class="actions">
             <a class="btn btn-primary" href="#home" data-view="home">На главную</a>
             <a class="btn btn-ghost" href="#order" data-view="order">Заказ</a>
-            <a class="btn btn-ghost" href="#to" data-view="to">Состав ТО</a>
             <a class="btn btn-ghost" href="#catalog" data-view="catalog">Каталог деталей</a>
-            <a class="btn btn-ghost" href="#kit" data-view="kit">Детали в комплектах ТО</a>
           </div>
         </section>
 
-        <section class="section view" id="order">
-          <style>
-            #order .b24-form .b24-form-control-list-selector-item-price,
-            #order .b24-form .b24-form-control-list-selector-item-price-current,
-            #order .b24-form .b24-form-basket-pay,
-            #order .b24-form .b24-form-control-product-price,
-            #order .b24-form .b24-form-control-product-price-current {
-              display: none !important;
-            }
-          </style>
-          <script data-b24-form="inline/15/1n1u0u" data-skip-moving="true">
-            (function(w,d,u){
-              var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/180000|0);
-              var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
-            })(window,document,'https://n001.ext.insitech.network/upload/crm/form/loader_15_1n1u0u.js');
-          </script>
-        </section>
+        <section class="section view" id="order"></section>
 
         <section class="section view" id="catalog">
           <h2 class="section-title">Каталог деталей</h2>
-          <p class="section-meta" id="catalog-count">Всего позиций: 63</p>
+          <p class="section-meta">Всего позиций: 60</p>
           <div class="cards">
             <article class="card">
               <div class="card-media">
-                <img src="images/8.G.2.0018.webp" alt="Капучинатор двойной (без жиклеров и колпачка)">
+                <img src="images/8.G.2.0018.jpeg" alt="Капучинатор двойной (без жиклеров и колпачка)">
               </div>
               <div class="card-body">
                 <h3 class="card-title">Капучинатор двойной (без жиклеров и колпачка)</h3>
@@ -170,7 +42,7 @@
             </article>
             <article class="card">
               <div class="card-media">
-                <img src="images/8G20018_F2_K1.webp" alt="(Dr.Coffee)_8G20018_F2_К1 Капучинатор с колпачком пенообразователя">
+                <img src="images/8G20018_F2__1.jpeg" alt="(Dr.Coffee)_8G20018_F2_К1 Капучинатор с колпачком пенообразователя">
               </div>
               <div class="card-body">
                 <h3 class="card-title">(Dr.Coffee)_8G20018_F2_К1 Капучинатор с колпачком пенообразователя</h3>
@@ -180,7 +52,7 @@
             </article>
             <article class="card">
               <div class="card-media">
-                <img src="images/8.W.4.0041.webp" alt="Дюза капучинатора">
+                <img src="images/8.W.4.0041.jpeg" alt="Дюза капучинатора">
               </div>
               <div class="card-body">
                 <h3 class="card-title">Дюза капучинатора</h3>
@@ -191,7 +63,7 @@
             </article>
             <article class="card">
               <div class="card-media">
-                <img src="images/8.G.1.0004.webp" alt="Кольцо поршня заварного блока 37.69 x 3.53">
+                <img src="images/8.G.1.0004.jpeg" alt="Кольцо поршня заварного блока 37.69 x 3.53">
               </div>
               <div class="card-body">
                 <h3 class="card-title">Кольцо поршня заварного блока 37.69 x 3.53</h3>
@@ -202,7 +74,7 @@
             </article>
             <article class="card">
               <div class="card-media">
-                <img src="images/8.G.1.0005.webp" alt="Кольцо уплотнительное 8.5x 1.8 крем-клапана">
+                <img src="images/8.G.1.0005.jpeg" alt="Кольцо уплотнительное 8.5x 1.8 крем-клапана">
               </div>
               <div class="card-body">
                 <h3 class="card-title">Кольцо уплотнительное 8.5x 1.8 крем-клапана</h3>
@@ -213,7 +85,7 @@
             </article>
             <article class="card">
               <div class="card-media">
-                <img src="images/8.G.1.0008.webp" alt="Кольцо уплотнительное 3.3x2.0 T-переходника трубки помпы">
+                <img src="images/8.G.1.0008.jpeg" alt="Кольцо уплотнительное 3.3x2.0 T-переходника трубки помпы">
               </div>
               <div class="card-body">
                 <h3 class="card-title">Кольцо уплотнительное 3.3x2.0 T-переходника трубки помпы</h3>
@@ -224,7 +96,7 @@
             </article>
             <article class="card">
               <div class="card-media">
-                <img src="images/8.W.5.0023.webp" alt="Фиксирующая  скоба трубок">
+                <img src="images/8.W.5.0023.jpeg" alt="Фиксирующая  скоба трубок">
               </div>
               <div class="card-body">
                 <h3 class="card-title">Фиксирующая  скоба трубок</h3>
@@ -234,7 +106,7 @@
             </article>
             <article class="card">
               <div class="card-media">
-                <img src="images/8.D.3.0037.webp" alt="Трансформатор кофемашины 220/20V 1.5A">
+                <img src="images/8.D.3.0037.jpeg" alt="Трансформатор кофемашины 220/20V 1.5A">
               </div>
               <div class="card-body">
                 <h3 class="card-title">Трансформатор кофемашины 220/20V 1.5A</h3>
@@ -244,7 +116,7 @@
             </article>
             <article class="card">
               <div class="card-media">
-                <img src="images/8.S.1.0161.webp" alt="Направляющая нижнего поршня">
+                <img src="images/8.S.1.0161.jpeg" alt="Направляющая нижнего поршня">
               </div>
               <div class="card-body">
                 <h3 class="card-title">Направляющая нижнего поршня</h3>
@@ -254,7 +126,7 @@
             </article>
             <article class="card">
               <div class="card-media">
-                <img src="images/8.S.1.0163.webp" alt="Пластиковый стакан поршня заварного блока">
+                <img src="images/8.S.1.0163.jpeg" alt="Пластиковый стакан поршня заварного блока">
               </div>
               <div class="card-body">
                 <h3 class="card-title">Пластиковый стакан поршня заварного блока</h3>
@@ -264,7 +136,7 @@
             </article>
             <article class="card">
               <div class="card-media">
-                <img src="images/8.G.2.0048.webp" alt="Капучинатор одинарный (без жиклера)">
+                <img src="images/8.G.2.0048.jpeg" alt="Капучинатор одинарный (без жиклера)">
               </div>
               <div class="card-body">
                 <h3 class="card-title">Капучинатор одинарный (без жиклера)</h3>
@@ -274,7 +146,7 @@
             </article>
             <article class="card">
               <div class="card-media">
-                <img src="images/8.D.3.0021.webp" alt="Клапан горячей воды 2-х ходовой">
+                <img src="images/8.D.3.0021.jpeg" alt="Клапан горячей воды 2-х ходовой">
               </div>
               <div class="card-body">
                 <h3 class="card-title">Клапан горячей воды 2-х ходовой</h3>
@@ -285,7 +157,7 @@
             </article>
             <article class="card">
               <div class="card-media">
-                <img src="images/8.S.1.0164.webp" alt="Лапка сброса отработанного кофе">
+                <img src="images/8.S.1.0164.jpeg" alt="Лапка сброса отработанного кофе">
               </div>
               <div class="card-body">
                 <h3 class="card-title">Лапка сброса отработанного кофе</h3>
@@ -296,7 +168,7 @@
             </article>
             <article class="card">
               <div class="card-media">
-                <img src="images/8.S.1.0189.webp" alt="Форсунка капучинатора">
+                <img src="images/8.S.1.0189.jpeg" alt="Форсунка капучинатора">
               </div>
               <div class="card-body">
                 <h3 class="card-title">Форсунка капучинатора</h3>
@@ -307,7 +179,7 @@
             </article>
             <article class="card">
               <div class="card-media">
-                <img src="images/7.NN.0494.webp" alt="Адаптер для бака воды ( в сборе)">
+                <img src="images/7.NN.0494.jpeg" alt="Адаптер для бака воды ( в сборе)">
               </div>
               <div class="card-body">
                 <h3 class="card-title">Адаптер для бака воды ( в сборе)</h3>
@@ -318,7 +190,7 @@
             </article>
             <article class="card">
               <div class="card-media">
-                <img src="images/8.S.1.0096.webp" alt="Шестерня мотор-редуктора заварочного узла">
+                <img src="images/8.S.1.0096.jpeg" alt="Шестерня мотор-редуктора заварочного узла">
               </div>
               <div class="card-body">
                 <h3 class="card-title">Шестерня мотор-редуктора заварочного узла</h3>
@@ -329,7 +201,7 @@
             </article>
             <article class="card">
               <div class="card-media">
-                <img src="images/8.G.3.0011_F2.webp" alt="Тефлоновая трубка 600 мм">
+                <img src="images/8.G.3.0011_F2.jpeg" alt="Тефлоновая трубка 600 мм">
               </div>
               <div class="card-body">
                 <h3 class="card-title">Тефлоновая трубка 600 мм</h3>
@@ -340,7 +212,7 @@
             </article>
             <article class="card">
               <div class="card-media">
-                <img src="images/8.S.1.0171.webp" alt="Втулка-трубка верхнего поршня">
+                <img src="images/8.S.1.0171.jpeg" alt="Втулка-трубка верхнего поршня">
               </div>
               <div class="card-body">
                 <h3 class="card-title">Втулка-трубка верхнего поршня</h3>
@@ -351,7 +223,7 @@
             </article>
             <article class="card">
               <div class="card-media">
-                <img src="images/7.NN.0022.webp" alt="Нижняя часть дисперсера с двойным капучинатором в сборе">
+                <img src="images/7.NN.0022.jpeg" alt="Нижняя часть дисперсера с двойным капучинатором в сборе">
               </div>
               <div class="card-body">
                 <h3 class="card-title">Нижняя часть дисперсера с двойным капучинатором в сборе</h3>
@@ -361,7 +233,7 @@
             </article>
             <article class="card">
               <div class="card-media">
-                <img src="images/7.NN.0012.webp" alt="Мембрана помпы">
+                <img src="images/7.NN.0012.jpeg" alt="Мембрана помпы">
               </div>
               <div class="card-body">
                 <h3 class="card-title">Мембрана помпы</h3>
@@ -372,7 +244,7 @@
             </article>
             <article class="card">
               <div class="card-media">
-                <img src="images/8.D.1.0102.webp" alt="Плата HMI">
+                <img src="images/8.D.1.0102.jpeg" alt="Плата HMI">
               </div>
               <div class="card-body">
                 <h3 class="card-title">Плата HMI</h3>
@@ -382,7 +254,7 @@
             </article>
             <article class="card">
               <div class="card-media">
-                <img src="images/8.G.1.0026.webp" alt="Уплотнитель стакана миксера 37.77x2.62">
+                <img src="images/8.G.1.0026.jpeg" alt="Уплотнитель стакана миксера 37.77x2.62">
               </div>
               <div class="card-body">
                 <h3 class="card-title">Уплотнитель стакана миксера 37.77x2.62</h3>
@@ -392,7 +264,7 @@
             </article>
             <article class="card">
               <div class="card-media">
-                <img src="images/8.G.2.0030.webp" alt="Уплотнение V-ring мотора миксера">
+                <img src="images/8.G.2.0030.jpeg" alt="Уплотнение V-ring мотора миксера">
               </div>
               <div class="card-body">
                 <h3 class="card-title">Уплотнение V-ring мотора миксера</h3>
@@ -402,7 +274,7 @@
             </article>
             <article class="card">
               <div class="card-media">
-                <img src="images/8.G.1.0011.webp" alt="Уплотнение 5x2 от помпы к Т-обр. переходнику">
+                <img src="images/8.G.1.0011.jpeg" alt="Уплотнение 5x2 от помпы к Т-обр. переходнику">
               </div>
               <div class="card-body">
                 <h3 class="card-title">Уплотнение 5x2 от помпы к Т-обр. переходнику</h3>
@@ -413,7 +285,7 @@
             </article>
             <article class="card">
               <div class="card-media">
-                <img src="images/8.W.5.0011.webp" alt="Пружина лапки сбрасывателя ЦУ">
+                <img src="images/8.W.5.0011.jpeg" alt="Пружина лапки сбрасывателя ЦУ">
               </div>
               <div class="card-body">
                 <h3 class="card-title">Пружина лапки сбрасывателя ЦУ</h3>
@@ -424,7 +296,7 @@
             </article>
             <article class="card">
               <div class="card-media">
-                <img src="images/8.G.1.0013.webp" alt="Уплотнение O-Ring 5.6x1.8 выхода трубки-втулки верхн.поршня">
+                <img src="images/8.G.1.0013.jpeg" alt="Уплотнение O-Ring 5.6x1.8 выхода трубки-втулки верхн.поршня">
               </div>
               <div class="card-body">
                 <h3 class="card-title">Уплотнение O-Ring 5.6x1.8 выхода трубки-втулки верхн.поршня</h3>
@@ -435,7 +307,7 @@
             </article>
             <article class="card">
               <div class="card-media">
-                <img src="images/8.D.1.0026.webp" alt="Силовая плата кофемашины F2">
+                <img src="images/8.D.1.0026.jpeg" alt="Силовая плата кофемашины F2">
               </div>
               <div class="card-body">
                 <h3 class="card-title">Силовая плата кофемашины F2</h3>
@@ -445,7 +317,7 @@
             </article>
             <article class="card">
               <div class="card-media">
-                <img src="images/8.G.1.0014.webp" alt="Уплотн. кольцо носиков раздатчика O-ring 5x2.5">
+                <img src="images/8.G.1.0014.jpeg" alt="Уплотн. кольцо носиков раздатчика O-ring 5x2.5">
               </div>
               <div class="card-body">
                 <h3 class="card-title">Уплотн. кольцо носиков раздатчика O-ring 5x2.5</h3>
@@ -456,7 +328,7 @@
             </article>
             <article class="card">
               <div class="card-media">
-                <img src="images/8.S.1.0319.webp" alt="Тройник Т-образный подачи молока">
+                <img src="images/8.S.1.0319.jpeg" alt="Тройник Т-образный подачи молока">
               </div>
               <div class="card-body">
                 <h3 class="card-title">Тройник Т-образный подачи молока</h3>
@@ -467,7 +339,7 @@
             </article>
             <article class="card">
               <div class="card-media">
-                <img src="images/8.S.1.0342.webp" alt="Коннектор прямой 3x6 выход воздушного клапана">
+                <img src="images/8.S.1.0342.jpeg" alt="Коннектор прямой 3x6 выход воздушного клапана">
               </div>
               <div class="card-body">
                 <h3 class="card-title">Коннектор прямой 3x6 выход воздушного клапана</h3>
@@ -478,7 +350,7 @@
             </article>
             <article class="card">
               <div class="card-media">
-                <img src="images/8.S.1.0347.webp" alt="Воздухозаборник F2-Х5 (без фильтра) прозрачн.">
+                <img src="images/8.S.1.0347.jpeg" alt="Воздухозаборник F2-Х5 (без фильтра) прозрачн.">
               </div>
               <div class="card-body">
                 <h3 class="card-title">Воздухозаборник F2-Х5 (без фильтра) прозрачн.</h3>
@@ -489,7 +361,7 @@
             </article>
             <article class="card">
               <div class="card-media">
-                <img src="images/8.S.1.0350.webp" alt="Соединитель прямой под силикон трубку">
+                <img src="images/8.S.1.0350.jpeg" alt="Соединитель прямой под силикон трубку">
               </div>
               <div class="card-body">
                 <h3 class="card-title">Соединитель прямой под силикон трубку</h3>
@@ -500,7 +372,7 @@
             </article>
             <article class="card">
               <div class="card-media">
-                <img src="images/7.NN.0019.webp" alt="Предохранительный клапан 5 bar">
+                <img src="images/7.NN.0019.jpeg" alt="Предохранительный клапан 5 bar">
               </div>
               <div class="card-body">
                 <h3 class="card-title">Предохранительный клапан 5 bar</h3>
@@ -511,7 +383,7 @@
             </article>
             <article class="card">
               <div class="card-media">
-                <img src="images/7.NN.0044.webp" alt="Дисплей в сборе">
+                <img src="images/placeholder.svg" alt="Дисплей в сборе">
               </div>
               <div class="card-body">
                 <h3 class="card-title">Дисплей в сборе</h3>
@@ -521,47 +393,7 @@
             </article>
             <article class="card">
               <div class="card-media">
-                <img src="images/7NN0040.webp" alt="Заварное устройство">
-              </div>
-              <div class="card-body">
-                <h3 class="card-title">Заварное устройство</h3>
-                <p class="card-article">Артикул: <span>7NN0040</span></p>
-                <p class="card-models">Модели: <span>F2-H, F2-Plus</span></p>
-              </div>
-            </article>
-            <article class="card">
-              <div class="card-media">
-                <img src="images/7NN0047_F2.webp" alt="Двигатель ЗУ F2 в сборе">
-              </div>
-              <div class="card-body">
-                <h3 class="card-title">Двигатель ЗУ F2 в сборе</h3>
-                <p class="card-article">Артикул: <span>7.NN.0047</span></p>
-                <p class="card-models">Модели: <span>F2-H, F2-Plus</span></p>
-              </div>
-            </article>
-            <article class="card">
-              <div class="card-media">
-                <img src="images/7NN0042_F2_left.webp" alt="Левая кофемолка">
-              </div>
-              <div class="card-body">
-                <h3 class="card-title">Левая кофемолка</h3>
-                <p class="card-article">Артикул: <span>7.NN.0042</span></p>
-                <p class="card-models">Модели: <span>F2-H, F2-Plus</span></p>
-              </div>
-            </article>
-            <article class="card">
-              <div class="card-media">
-                <img src="images/7NN0042_F2_right.webp" alt="Правая кофемолка">
-              </div>
-              <div class="card-body">
-                <h3 class="card-title">Правая кофемолка</h3>
-                <p class="card-article">Артикул: <span>7.NN.0042</span></p>
-                <p class="card-models">Модели: <span>F2-H, F2-Plus</span></p>
-              </div>
-            </article>
-            <article class="card">
-              <div class="card-media">
-                <img src="images/7.NN.0069.webp" alt="Предохранительный клапан 15 bar">
+                <img src="images/7.NN.0069.jpeg" alt="Предохранительный клапан 15 bar">
               </div>
               <div class="card-body">
                 <h3 class="card-title">Предохранительный клапан 15 bar</h3>
@@ -572,7 +404,7 @@
             </article>
             <article class="card">
               <div class="card-media">
-                <img src="images/7.NN.0185.webp" alt="Паровой бойлер">
+                <img src="images/7.NN.0185.jpeg" alt="Паровой бойлер">
               </div>
               <div class="card-body">
                 <h3 class="card-title">Паровой бойлер</h3>
@@ -582,7 +414,7 @@
             </article>
             <article class="card">
               <div class="card-media">
-                <img src="images/7.NN.0186.webp" alt="Бойлер кипятка">
+                <img src="images/7.NN.0186.jpeg" alt="Бойлер кипятка">
               </div>
               <div class="card-body">
                 <h3 class="card-title">Бойлер кипятка</h3>
@@ -592,7 +424,7 @@
             </article>
             <article class="card">
               <div class="card-media">
-                <img src="images/7.NN.0371.webp" alt="Запорный Клапан бункера воды">
+                <img src="images/7.NN.0371.jpeg" alt="Запорный Клапан бункера воды">
               </div>
               <div class="card-body">
                 <h3 class="card-title">Запорный Клапан бункера воды</h3>
@@ -602,7 +434,7 @@
             </article>
             <article class="card">
               <div class="card-media">
-                <img src="images/8.D.3.0060.webp" alt="Мотор-редуктор шнека бункера сыпучих продуктов">
+                <img src="images/8.D.3.0060.jpeg" alt="Мотор-редуктор шнека бункера сыпучих продуктов">
               </div>
               <div class="card-body">
                 <h3 class="card-title">Мотор-редуктор шнека бункера сыпучих продуктов</h3>
@@ -612,7 +444,7 @@
             </article>
             <article class="card">
               <div class="card-media">
-                <img src="images/7.NN.0119.webp" alt="Жернов верхний в сборе">
+                <img src="images/7.NN.0119.jpeg" alt="Жернов верхний в сборе">
               </div>
               <div class="card-body">
                 <h3 class="card-title">Жернов верхний в сборе</h3>
@@ -622,7 +454,7 @@
             </article>
             <article class="card">
               <div class="card-media">
-                <img src="images/8.S.1.0521.webp" alt="Коннектор 5 выходов F3">
+                <img src="images/8.S.1.0521.jpeg" alt="Коннектор 5 выходов F3">
               </div>
               <div class="card-body">
                 <h3 class="card-title">Коннектор 5 выходов F3</h3>
@@ -632,7 +464,7 @@
             </article>
             <article class="card">
               <div class="card-media">
-                <img src="images/8.W.5.0054.webp" alt="Пружина силиконового шланга выхода молока в раздатчике">
+                <img src="images/8.W.5.0054.jpeg" alt="Пружина силиконового шланга выхода молока в раздатчике">
               </div>
               <div class="card-body">
                 <h3 class="card-title">Пружина силиконового шланга выхода молока в раздатчике</h3>
@@ -642,7 +474,7 @@
             </article>
             <article class="card">
               <div class="card-media">
-                <img src="images/8.S.1.0185.webp" alt="Переходник трубок в диспенсер кофемашины">
+                <img src="images/8.S.1.0185.jpeg" alt="Переходник трубок в диспенсер кофемашины">
               </div>
               <div class="card-body">
                 <h3 class="card-title">Переходник трубок в диспенсер кофемашины</h3>
@@ -652,7 +484,7 @@
             </article>
             <article class="card">
               <div class="card-media">
-                <img src="images/8.S.1.0181.webp" alt="Адаптер выхода кофе в диспенсере">
+                <img src="images/8.S.1.0181.jpeg" alt="Адаптер выхода кофе в диспенсере">
               </div>
               <div class="card-body">
                 <h3 class="card-title">Адаптер выхода кофе в диспенсере</h3>
@@ -662,7 +494,7 @@
             </article>
             <article class="card">
               <div class="card-media">
-                <img src="images/8.W.6.0055.webp" alt="Сетка прошня заварочного блока верхнего (нижнего)">
+                <img src="images/8.W.6.0055.jpeg" alt="Сетка прошня заварочного блока верхнего (нижнего)">
               </div>
               <div class="card-body">
                 <h3 class="card-title">Сетка прошня заварочного блока верхнего (нижнего)</h3>
@@ -672,7 +504,7 @@
             </article>
             <article class="card">
               <div class="card-media">
-                <img src="images/8.S.1.0170.webp" alt="Воронка выхода  молотого кофе заварного блока">
+                <img src="images/8.S.1.0170.jpeg" alt="Воронка выхода  молотого кофе заварного блока">
               </div>
               <div class="card-body">
                 <h3 class="card-title">Воронка выхода  молотого кофе заварного блока</h3>
@@ -682,7 +514,7 @@
             </article>
             <article class="card">
               <div class="card-media">
-                <img src="images/8.W.5.0012.webp" alt="Пружинка воронки выхода молотого кофе">
+                <img src="images/8.W.5.0012.jpeg" alt="Пружинка воронки выхода молотого кофе">
               </div>
               <div class="card-body">
                 <h3 class="card-title">Пружинка воронки выхода молотого кофе</h3>
@@ -692,7 +524,7 @@
             </article>
             <article class="card">
               <div class="card-media">
-                <img src="images/8.S.1.0162.webp" alt="Нижний поршень заварного устройства">
+                <img src="images/8.S.1.0162.jpeg" alt="Нижний поршень заварного устройства">
               </div>
               <div class="card-body">
                 <h3 class="card-title">Нижний поршень заварного устройства</h3>
@@ -702,7 +534,7 @@
             </article>
             <article class="card">
               <div class="card-media">
-                <img src="images/8.S.1.0167.webp" alt="Верхний поршень заварного устройства">
+                <img src="images/8.S.1.0167.jpeg" alt="Верхний поршень заварного устройства">
               </div>
               <div class="card-body">
                 <h3 class="card-title">Верхний поршень заварного устройства</h3>
@@ -712,7 +544,7 @@
             </article>
             <article class="card">
               <div class="card-media">
-                <img src="images/8.S.1.0165.webp" alt="Направляющая стакана заварного устройства">
+                <img src="images/8.S.1.0165.jpeg" alt="Направляющая стакана заварного устройства">
               </div>
               <div class="card-body">
                 <h3 class="card-title">Направляющая стакана заварного устройства</h3>
@@ -722,7 +554,7 @@
             </article>
             <article class="card">
               <div class="card-media">
-                <img src="images/8.W.1.0006.webp" alt="Гильза стакана заварочного устройства, металл">
+                <img src="images/8.W.1.0006.png" alt="Гильза стакана заварочного устройства, металл">
               </div>
               <div class="card-body">
                 <h3 class="card-title">Гильза стакана заварочного устройства, металл</h3>
@@ -732,7 +564,7 @@
             </article>
             <article class="card">
               <div class="card-media">
-                <img src="images/8.G.1.0012.webp" alt="Уплотнение O-Ring 4.0x1.8 штуцера подачи воды в заварной блок">
+                <img src="images/8.G.1.0012.jpeg" alt="Уплотнение O-Ring 4.0x1.8 штуцера подачи воды в заварной блок">
               </div>
               <div class="card-body">
                 <h3 class="card-title">Уплотнение O-Ring 4.0x1.8 штуцера подачи воды в заварной блок</h3>
@@ -742,7 +574,7 @@
             </article>
             <article class="card">
               <div class="card-media">
-                <img src="images/8.S.1.0557.webp" alt="Фиксатор клапана бункера воды">
+                <img src="images/8.S.1.0557.jpeg" alt="Фиксатор клапана бункера воды">
               </div>
               <div class="card-body">
                 <h3 class="card-title">Фиксатор клапана бункера воды</h3>
@@ -752,7 +584,7 @@
             </article>
             <article class="card">
               <div class="card-media">
-                <img src="images/8.S.1.0195.webp" alt="Корпус адаптера бака воды (не в сборе)">
+                <img src="images/8.S.1.0195.jpeg" alt="Корпус адаптера бака воды (не в сборе)">
               </div>
               <div class="card-body">
                 <h3 class="card-title">Корпус адаптера бака воды (не в сборе)</h3>
@@ -762,7 +594,7 @@
             </article>
             <article class="card">
               <div class="card-media">
-                <img src="images/8.G.1.0039.webp" alt="Уплотнительное кольцо штуцера бойлера 9.5x1.5">
+                <img src="images/8.G.1.0039.jpeg" alt="Уплотнительное кольцо штуцера бойлера 9.5x1.5">
               </div>
               <div class="card-body">
                 <h3 class="card-title">Уплотнительное кольцо штуцера бойлера 9.5x1.5</h3>
@@ -772,7 +604,7 @@
             </article>
             <article class="card">
               <div class="card-media">
-                <img src="images/8.W.4.0040.webp" alt="Штуцер бойлера пара/воды под скобу (металл)">
+                <img src="images/8.W.4.0040.jpeg" alt="Штуцер бойлера пара/воды под скобу (металл)">
               </div>
               <div class="card-body">
                 <h3 class="card-title">Штуцер бойлера пара/воды под скобу (металл)</h3>
@@ -782,7 +614,7 @@
             </article>
             <article class="card">
               <div class="card-media">
-                <img src="images/8.D.3.0083.webp" alt="Термопредохранитель 155 град С">
+                <img src="images/8.D.3.0083.jpeg" alt="Термопредохранитель 155 град С">
               </div>
               <div class="card-body">
                 <h3 class="card-title">Термопредохранитель 155 град С</h3>
@@ -792,7 +624,7 @@
             </article>
             <article class="card">
               <div class="card-media">
-                <img src="images/8.D.3.0100.webp" alt="Щуп уровня воды бойлера пара">
+                <img src="images/8.D.3.0100.jpeg" alt="Щуп уровня воды бойлера пара">
               </div>
               <div class="card-body">
                 <h3 class="card-title">Щуп уровня воды бойлера пара</h3>
@@ -802,7 +634,7 @@
             </article>
             <article class="card">
               <div class="card-media">
-                <img src="images/8.D.3.0035.webp" alt="Блок клапанов пара (комплект)">
+                <img src="images/8.D.3.0035.jpeg" alt="Блок клапанов пара (комплект)">
               </div>
               <div class="card-body">
                 <h3 class="card-title">Блок клапанов пара (комплект)</h3>
@@ -812,7 +644,7 @@
             </article>
             <article class="card">
               <div class="card-media">
-                <img src="images/8.T.1.0003.webp" alt="Жернов нижний кофемолки , керамика">
+                <img src="images/8.T.1.0003.jpeg" alt="Жернов нижний кофемолки , керамика">
               </div>
               <div class="card-body">
                 <h3 class="card-title">Жернов нижний кофемолки , керамика</h3>
@@ -822,352 +654,13 @@
             </article>
           </div>
         </section>
-
-        <section class="section view" id="to">
-          <h2 class="section-title">Состав ТО</h2>
-          <div class="to-table-wrap">
-            <h3 class="to-table-title">ТО</h3>
-            <table class="to-table" aria-label="ТО">
-              <thead>
-                <tr>
-                  <th>№</th>
-                  <th>Артикул</th>
-                  <th>Наименование</th>
-                  <th class="to-col-qty">кол-во</th>
-                  <th class="to-col-check">Карточка</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr class="to-row-to1">
-                  <td>1</td>
-                  <td>8G10004</td>
-                  <td>Кольцо O-ring φ37.69*φ3.53 верхнего и нижнего поршней</td>
-                  <td class="to-cell-qty">2</td>
-                  <td class="to-cell-check"></td>
-                </tr>
-                <tr class="to-row-to1">
-                  <td>2</td>
-                  <td>8G10005</td>
-                  <td>Кольцо уплотнительное 8.5x1.8</td>
-                  <td class="to-cell-qty">1</td>
-                  <td class="to-cell-check"></td>
-                </tr>
-                <tr class="to-row-to1">
-                  <td>3</td>
-                  <td>8G10014</td>
-                  <td>Уплотн. кольцо носиков O-ring 5x2.5</td>
-                  <td class="to-cell-qty">2</td>
-                  <td class="to-cell-check"></td>
-                </tr>
-                <tr class="to-row-to1">
-                  <td>4</td>
-                  <td>8G30001</td>
-                  <td>Трубка силиконовая 3x6</td>
-                  <td class="to-cell-qty">1</td>
-                  <td class="to-cell-check"><span class="to-cell-check-mark">✓</span></td>
-                </tr>
-                <tr class="to-row-to1">
-                  <td>5</td>
-                  <td>8G30008</td>
-                  <td>Трубка силиконовая</td>
-                  <td class="to-cell-qty">1</td>
-                  <td class="to-cell-check"><span class="to-cell-check-mark">✓</span></td>
-                </tr>
-                <tr class="to-row-to1">
-                  <td>6</td>
-                  <td>8S10319</td>
-                  <td>Т-образный тройник</td>
-                  <td class="to-cell-qty">1</td>
-                  <td class="to-cell-check"></td>
-                </tr>
-                <tr class="to-row-to1">
-                  <td>7</td>
-                  <td>8S10342</td>
-                  <td>Переходник-соединитель прямой 3x6</td>
-                  <td class="to-cell-qty">1</td>
-                  <td class="to-cell-check"></td>
-                </tr>
-                <tr class="to-row-to1">
-                  <td>8</td>
-                  <td>8S10347</td>
-                  <td>Воздухозаборник (микрофон)</td>
-                  <td class="to-cell-qty">1</td>
-                  <td class="to-cell-check"></td>
-                </tr>
-                <tr class="to-row-to1">
-                  <td>9</td>
-                  <td>8S10350</td>
-                  <td>Прямой коннектор</td>
-                  <td class="to-cell-qty">2</td>
-                  <td class="to-cell-check"></td>
-                </tr>
-                <tr class="to-row-to1">
-                  <td>10</td>
-                  <td>8G30011</td>
-                  <td>Тефлоновая трубка прессостата</td>
-                  <td class="to-cell-qty">1</td>
-                  <td class="to-cell-check"></td>
-                </tr>
-                <tr class="to-row-to1">
-                  <td>11</td>
-                  <td>8S10171</td>
-                  <td>Втулка-трубка верхнего поршня</td>
-                  <td class="to-cell-qty">1</td>
-                  <td class="to-cell-check"></td>
-                </tr>
-                <tr class="to-row-to1">
-                  <td>12</td>
-                  <td>7NN0012</td>
-                  <td>Мембрана помпы</td>
-                  <td class="to-cell-qty">2</td>
-                  <td class="to-cell-check"></td>
-                </tr>
-                <tr class="to-row-to1">
-                  <td>13</td>
-                  <td>8G10011</td>
-                  <td>Уплотнение o-ring 5x2</td>
-                  <td class="to-cell-qty">1</td>
-                  <td class="to-cell-check"></td>
-                </tr>
-                <tr class="to-row-to1">
-                  <td>14</td>
-                  <td>8G10013</td>
-                  <td>Уплотнение основы раздатчика O-ring 5,6x1,8</td>
-                  <td class="to-cell-qty">1</td>
-                  <td class="to-cell-check"></td>
-                </tr>
-                <tr class="to-row-to1">
-                  <td>15</td>
-                  <td>8S10189</td>
-                  <td>Жиклер каппучинатора F2</td>
-                  <td class="to-cell-qty">1</td>
-                  <td class="to-cell-check"></td>
-                </tr>
-                <tr class="to-row-to2-extra">
-                  <td>16</td>
-                  <td>7NN0019</td>
-                  <td>Клапан расширительный 5 Бар</td>
-                  <td class="to-cell-qty">1</td>
-                  <td class="to-cell-check"></td>
-                </tr>
-                <tr class="to-row-to2-extra">
-                  <td>17</td>
-                  <td>8W50011</td>
-                  <td>Пружина лапки сброса</td>
-                  <td class="to-cell-qty">1</td>
-                  <td class="to-cell-check"></td>
-                </tr>
-                <tr class="to-row-to2-extra">
-                  <td>18</td>
-                  <td>8S10164</td>
-                  <td>Лапка сбрасыватель отработанного кофе</td>
-                  <td class="to-cell-qty">1</td>
-                  <td class="to-cell-check"></td>
-                </tr>
-                <tr class="to-row-to2-extra">
-                  <td>19</td>
-                  <td>7NN0494</td>
-                  <td>Приемник танка воды</td>
-                  <td class="to-cell-qty">1</td>
-                  <td class="to-cell-check"></td>
-                </tr>
-                <tr class="to-row-to2-extra">
-                  <td>20</td>
-                  <td>8S10096</td>
-                  <td>Шестерня головной части мотора ЦУ</td>
-                  <td class="to-cell-qty">1</td>
-                  <td class="to-cell-check"></td>
-                </tr>
-                <tr class="to-row-to2-extra">
-                  <td>21</td>
-                  <td>8D30021</td>
-                  <td>Электромагнитный клапан горячей воды</td>
-                  <td class="to-cell-qty">1</td>
-                  <td class="to-cell-check"></td>
-                </tr>
-                <tr class="to-row-to2-extra">
-                  <td>22</td>
-                  <td>7NN0069</td>
-                  <td>Клапан 15 Бар F2H</td>
-                  <td class="to-cell-qty">1</td>
-                  <td class="to-cell-check"></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </section>
-
-        <section class="section view" id="kit">
-          <h2 class="section-title">Детали, продающиеся только в составе комплектов ТО</h2>
-          <p class="section-meta" id="kit-count">Всего позиций: 0</p>
-          <div class="kit-tabs" role="tablist" aria-label="Комплекты ТО">
-            <button class="kit-tab is-active" type="button" role="tab" aria-selected="true" data-kit-tab="to1">ТО-1</button>
-            <button class="kit-tab" type="button" role="tab" aria-selected="false" data-kit-tab="to2">ТО-2</button>
-          </div>
-          <div class="cards" id="kit-cards"></div>
-        </section>
       </div>
     </main>
     <script>
       (function () {
         const buttons = Array.from(document.querySelectorAll("[data-view]"));
-        const tabButtons = Array.from(document.querySelectorAll("[data-kit-tab]"));
         const sections = Array.from(document.querySelectorAll(".view"));
-        const views = new Set(["home", "order", "to", "catalog", "kit"]);
-        const kitOnlyText = "Поставляется только в комплектах ТО1 и ТО2";
-        const kitSets = {
-          to1: new Set([
-            "8G10004",
-            "8G10005",
-            "8G10014",
-            "8G30001",
-            "8G30008",
-            "8S10319",
-            "8S10342",
-            "8S10347",
-            "8S10350",
-            "8G30011",
-            "8S10171",
-            "7NN0012",
-            "8G10011",
-            "8G10013",
-            "8S10189"
-          ]),
-          to2: new Set([
-            "8G10004",
-            "8G10005",
-            "8G10014",
-            "8G30001",
-            "8G30008",
-            "8S10319",
-            "8S10342",
-            "8S10347",
-            "8S10350",
-            "8G30011",
-            "8S10171",
-            "7NN0012",
-            "8G10011",
-            "8G10013",
-            "8S10189",
-            "7NN0019",
-            "8W50011",
-            "8S10164",
-            "7NN0494",
-            "8S10096",
-            "8D30021",
-            "7NN0069"
-          ])
-        };
-
-        const normalizeText = (value) => value.replace(/\s+/g, " ").trim();
-        const normalizeArticle = (value) => value.toUpperCase().replace(/[^A-Z0-9]/g, "");
-        const isCodeMatch = (articleCode, kitCode) => articleCode === kitCode || articleCode.startsWith(kitCode);
-
-        const getCardKits = (card) => {
-          const article = card.querySelector(".card-article span")?.textContent || "";
-          const normalizedArticle = normalizeArticle(article);
-          const kits = [];
-          if (Array.from(kitSets.to1).some((code) => isCodeMatch(normalizedArticle, code))) {
-            kits.push("to1");
-          }
-          if (Array.from(kitSets.to2).some((code) => isCodeMatch(normalizedArticle, code))) {
-            kits.push("to2");
-          }
-          return kits;
-        };
-
-        const setKitTab = (tab) => {
-          const activeTab = tab === "to2" ? "to2" : "to1";
-          const cards = Array.from(document.querySelectorAll("#kit-cards .card"));
-          cards.forEach((card) => {
-            const kits = (card.dataset.kits || "").split(/\s+/).filter(Boolean);
-            card.hidden = !kits.includes(activeTab);
-          });
-
-          tabButtons.forEach((button) => {
-            const isActive = button.dataset.kitTab === activeTab;
-            button.classList.toggle("is-active", isActive);
-            button.setAttribute("aria-selected", String(isActive));
-          });
-
-          const kitCount = document.querySelector("#kit-count");
-          if (kitCount) {
-            const visibleCount = cards.filter((card) => !card.hidden).length;
-            kitCount.textContent = `Всего позиций: ${visibleCount}`;
-          }
-        };
-
-        const upgradeKitOnlyNotes = () => {
-          const notes = Array.from(document.querySelectorAll(".card-note"));
-          notes.forEach((note) => {
-            const text = normalizeText(note.textContent.replace("Примечание:", ""));
-            if (text !== kitOnlyText) {
-              return;
-            }
-
-            const card = note.closest(".card");
-            if (!card || card.querySelector(".card-footer-kit")) {
-              return;
-            }
-
-            const footer = document.createElement("footer");
-            footer.className = "card-footer card-footer-kit";
-
-            const badge = document.createElement("span");
-            badge.className = "card-footer-badge";
-            badge.textContent = "ТО1/ТО2";
-
-            const message = document.createElement("span");
-            message.className = "card-footer-text";
-            message.textContent = kitOnlyText;
-
-            footer.append(badge, message);
-            note.remove();
-            card.appendChild(footer);
-          });
-        };
-
-        const moveKitOnlyCards = () => {
-          const kitCardsContainer = document.querySelector("#kit-cards");
-          if (!kitCardsContainer) {
-            return;
-          }
-
-          const kitCards = Array.from(document.querySelectorAll("#catalog .card")).filter((card) =>
-            card.querySelector(".card-footer-kit")
-          );
-          kitCards.forEach((card) => {
-            const kits = getCardKits(card);
-            if (!kits.length) {
-              return;
-            }
-            card.dataset.kits = kits.join(" ");
-
-            const footer = card.querySelector(".card-footer-kit");
-            if (footer) {
-              footer.remove();
-            }
-            kitCardsContainer.appendChild(card);
-          });
-
-          const catalogCount = document.querySelector("#catalog-count");
-          const kitCount = document.querySelector("#kit-count");
-          if (catalogCount) {
-            catalogCount.textContent = `Всего позиций: ${document.querySelectorAll("#catalog .card").length}`;
-          }
-          if (kitCount) {
-            kitCount.textContent = `Всего позиций: ${document.querySelectorAll("#kit-cards .card").length}`;
-          }
-        };
-
-        const initKitTabs = () => {
-          tabButtons.forEach((button) => {
-            button.addEventListener("click", () => {
-              setKitTab(button.dataset.kitTab);
-            });
-          });
-          setKitTab("to1");
-        };
+        const views = new Set(["home", "order", "catalog"]);
 
         const setView = (view) => {
           const active = views.has(view) ? view : "home";
@@ -1182,33 +675,11 @@
           });
         };
 
-        const syncView = (view) => {
-          const active = views.has(view) ? view : "home";
-          const nextHash = `#${active}`;
-
-          setView(active);
-
-          if (window.location.hash !== nextHash) {
-            window.history.pushState({ view: active }, "", nextHash);
-          }
-        };
-
         const onHashChange = () => {
           const hash = window.location.hash.replace("#", "");
           setView(hash || "home");
         };
 
-        buttons.forEach((button) => {
-          button.addEventListener("click", (event) => {
-            event.preventDefault();
-            syncView(button.dataset.view || "home");
-          });
-        });
-
-        upgradeKitOnlyNotes();
-        moveKitOnlyCards();
-        initKitTabs();
-        window.addEventListener("popstate", onHashChange);
         window.addEventListener("hashchange", onHashChange);
         onHashChange();
       })();
