@@ -129,29 +129,27 @@
           </p>
           <div class="actions">
             <a class="btn btn-primary" href="#home" data-view="home">На главную</a>
-            <a class="btn btn-ghost" href="#order" data-view="order">Заказ</a>
+            <a class="btn btn-ghost" href="#dops" data-view="dops">Допы</a>
             <a class="btn btn-ghost" href="#to" data-view="to">Состав ТО</a>
             <a class="btn btn-ghost" href="#catalog" data-view="catalog">Каталог деталей</a>
             <a class="btn btn-ghost" href="#kit" data-view="kit">Детали в комплектах ТО</a>
           </div>
         </section>
 
-        <section class="section view" id="order">
-          <style>
-            #order .b24-form .b24-form-control-list-selector-item-price,
-            #order .b24-form .b24-form-control-list-selector-item-price-current,
-            #order .b24-form .b24-form-basket-pay,
-            #order .b24-form .b24-form-control-product-price,
-            #order .b24-form .b24-form-control-product-price-current {
-              display: none !important;
-            }
-          </style>
-          <script data-b24-form="inline/15/1n1u0u" data-skip-moving="true">
-            (function(w,d,u){
-              var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/180000|0);
-              var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
-            })(window,document,'https://n001.ext.insitech.network/upload/crm/form/loader_15_1n1u0u.js');
-          </script>
+        <section class="section view" id="dops">
+          <h2 class="section-title">Допы</h2>
+          <div class="cards">
+            <article class="card">
+              <div class="card-media">
+                <img src="images/Container 2.jpg" alt="Контейнер для молока 3,5 л.">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Контейнер для молока 3,5 л.</h3>
+                <p class="card-article">Артикул: <span>11111111</span></p>
+                <p class="card-models">Модели: <span>F2H</span></p>
+              </div>
+            </article>
+          </div>
         </section>
 
         <section class="section view" id="catalog">
@@ -1033,7 +1031,7 @@
         const buttons = Array.from(document.querySelectorAll("[data-view]"));
         const tabButtons = Array.from(document.querySelectorAll("[data-kit-tab]"));
         const sections = Array.from(document.querySelectorAll(".view"));
-        const views = new Set(["home", "order", "to", "catalog", "kit"]);
+        const views = new Set(["home", "dops", "to", "catalog", "kit"]);
         const kitOnlyText = "Поставляется только в комплектах ТО1 и ТО2";
         const kitSets = {
           to1: new Set([
