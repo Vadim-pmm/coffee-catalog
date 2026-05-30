@@ -169,6 +169,13 @@ img {
   margin-top: 28px;
 }
 
+#dops .cards {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 260px));
+  justify-content: start;
+}
+
+
+
 .card {
   background: var(--steam);
   border-radius: var(--radius-md);
